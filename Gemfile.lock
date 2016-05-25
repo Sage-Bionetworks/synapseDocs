@@ -23,6 +23,7 @@ GEM
       sass (~> 3.4)
     jekyll-watch (1.3.1)
       listen (~> 3.0)
+    json (1.8.3)
     kramdown (1.10.0)
     libv8 (3.16.14.13)
     liquid (3.0.6)
@@ -58,6 +59,7 @@ DEPENDENCIES
   iconv
   jekyll (~> 3.1.2)
   jekyll-code-example-tag
+  json
   nokogiri
   pygments.rb
   redcarpet
