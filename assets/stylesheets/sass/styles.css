@@ -202,4 +202,61 @@ table.markdown-table {
     .markdown-table tr th :last-child, .markdown-table tr td :last-child {
       margin-bottom: 0; }
 
+/*
+index.html sidebar
+*/
 
+.sidebar {
+  display: block;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 75px;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    padding: 10px;
+    background-color: #E8E8EE;
+  }
+}
+
+/*
+index footer
+*/
+
+#footer-index {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+/* 
+change size of glyphicons on index page
+*/
+
+.glyphicon.glyphicon-ok-circle {
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+.glyphicon.glyphicon-file {
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.glyphicon.glyphicon-comment {
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.glyphicon.glyphicon-book {
+    font-size: 65px;
+    margin-bottom: 10px;
+    color: #1e7098
+}
+
+
+.nav li a{
+color: white !important;
+}

@@ -3,49 +3,224 @@ title: Synapse Documentation, Welcome to Synapse Documentation
 layout: default
 ---
 
-<div class="row-fluid">
-   <div class="span12">
-      <div class="row">
-         <div class="span3">
-            <div class="sidebar-nav padding-left-30 padding-right-15 font-size-14">
-               <ul class="nav">
-                  {% for page in site.pages %}
-                  {% if page.layout == 'article' %}
-                     <li><a href="{{ page.url }}.html">{{ page.title }}</a></li>
-                  {% endif %}
-                  {% endfor %} <!-- page --> 
-               </ul>
-            <div class='clear'></div>
-         </div>
-      </div>
-      <div class='headline'>
-         <h2>    Welcome To the Synapse Docs </h2>
-            <p>
-                Newcomer? Get started with the <a href='/articles/getting_started.html'>User Guide</a> . Already using Synapse? Check out our <a href='articles/howtos.html'>How-Tos</a> to get code snippets that make you more productive. Have a specific question See our <a href='https://www.synapse.org/#!SynapseForum:default'>Forum.</a>
-	    </p>
-      </div>
-     <div class='span6'><img src='/assets/images/screenshots.png' alt='screenshots' height='30'></div>
-   </div>
-   <div class='clear' style=''></div>
-</div>
+<style type="text/css">
+.navstripe {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.26);
+  padding: 6px;
+  margin-top: 32px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.navstripe .nav.nav-primary {
+  display: inline-block;
+  color: white;
+  margin: 0;
+  margin-top: 0;
+}
+.navstripe .nav.nav-primary a {
+  color: white;
+}
+.navstripe .nav.nav-primary a:hover {
+  color: #F0F0F0;
+}
+.navstripe .nav.nav-primary ul {
+  margin: 0;
+}
+.navstripe .nav.nav-primary ul li {
+  display: inline-block;
+  padding: 1px 12px;
+  margin: 0;
+}
+.visible-xxs {
+  display: none;
+}
+@media (max-width: 700px) {
+  .navstripe .nav.nav-primary ul li {
+    padding: 1px 0;
+  }
+  .visible-xxs {
+    display: block;
+  }
+}
+
+h3 {
+  font-size: 28px;
+}
+@media (max-width: 767px) {
+  .action h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .action h3 span.subaction {
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+.container {
+  max-width: 960px;
+}
+.action {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fa-faded {
+  color: #DDD;
+}
+.action .fa {
+  display: block;
+  margin-bottom: 8px;
+}
+.action a {
+  text-decoration: none;
+}
+.header, section, .section {
+  text-align: center;
+}
+section, .section {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  background-image: url(images/hr.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+section:last-child, .section:last-child, section.last, .section.last {
+  background-image: none;
+}
+.section-intro {
+  margin-bottom: 36px;
+}
+.header {
+  padding: 80px 10px 0px 10px;
+  height: 100%;
+}
+.header h1 {
+  font-size: 120px;
+  margin-bottom: 0;
+}
+.header h5 {
+  font-weight: 200;
+  font-size: 17px;
+}
+.header h5.first {
+  font-weight: 600;
+}
+.header a {
+  color: #1e7098 !important;
+}
+.subaction {
+  color: grey;
+  font-size: 18px;
+}
+#example1-container {
+  padding: 24px 0 0 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+iframe#example1 {
+  border: none;
+  width: 600px;
+  height: 480px;
+}
+#example1-code {
+  padding-top: 16px;
+}
+#example1-code pre, #example1-code code {
+  text-align: left;
+  font-size: 11px;
+  line-height: 1.2;
+  overflow: auto;
+  white-space: pre;
+}
+
+.narrow {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h6#main-credits {
+  display: block;
+  font-size: 28px;
+  font-weight: 200;
+  margin-top: -4px;
+  margin-bottom: 32px;
+}
+.slideshow-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.bx-wrapper .bx-viewport {
+  left: 0;
+}
+.slide {
+  width: 490px;
+}
+</style>
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+<div class="header">
+  <h2>Welcome To the Synapse Docs</h2>
+  <h5>Newcomer? Get started with the <a href='/articles/getting_started.html'>Getting Started</a>.</h5> 
+   <h5>Already using Synapse? Check out our <a href='articles/howtos.html'>User Guide</a> to get</h5>
+   <h5> code snippets that make you more productive.</h5>
+   <h5>Have a specific question See our <a href='https://www.synapse.org/#!SynapseForum:default'>Forum.</a></h5>
 </div>
 
-
-<div class="row-fluid">
-   <div class='span2 offset3'>
-      <h2><a href='/articles/getting_started.html'>Getting Started</a></h2>
-      <p> "I am new to Synapse..."</p>
-   </div>
-   <div class='span2'>
-      <h2>How-To</h2>
-      <p>"How do I..? Find out what Synapse has to offer and how to use it.".</p>
-   </div>
-   <div class='span2'>
-      <h2><a href='/articles/api_docs.html'>API Docs</a></h2>
-      <p>Interact with Syanpse directly from programming languages.</p>
-   </div>
-   <div class='span2'>
-      <h2><a href='https://www.synapse.org/#!SynapseForum:default'>Forum</a> </h2>
-      <p>Ask questions or share your knowledge.  Search our knowledgebase.</p>
-   </div>
+<div class="header">
+  <div class="section">
+    <div class="row">
+      <div class="col-xs-3">
+        <div class="action">
+          <h3>
+            <a href="/articles/getting_started.html">
+                <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+              <i class="fa fa-picture-o fa-3x"></i>
+                Getting Started<br/>
+            </a>
+            <span class="subaction">"I am new to Synapse..."</span>
+          </h3>`
+        </div>
+      </div>
+      <div class="col-xs-3">
+        <div class="action">
+          <h3>
+            <a href="/articles/api_docs.html">
+              <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+              <i class="fa fa-road fa-3x"></i>
+                API Docs<br/>
+            </a>
+            <span class="subaction">Interact with Syanpse directly from programming languages.</span>
+          </h3>
+        </div>
+       </div>
+      <div class="col-xs-3">
+        <div class="action">
+          <h3>
+            <a href="/articles/user_guide.html">
+              <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+              <i class="fa fa-book fa-3x"></i>
+                User Guide<br/>
+            </a>
+            <span class="subaction">Learn to use Synapse.</span>
+          </h3>
+        </div>
+      </div>
+      <div class="col-xs-3">
+        <div class="action">
+          <h3>
+            <a href="https://www.synapse.org/#!SynapseForum:default">
+              <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+              <i class="fa fa-book fa-3x"></i>
+              Forum<br/>
+            </a>
+            <span class="subaction">Ask questions or share your knowledge.  Search our knowledgebase.</span>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
