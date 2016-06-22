@@ -1,8 +1,9 @@
 ---
 title: "Access and Content Restrictions"
 layout: article
-excerpt:
+excerpt: Learn how to share and restrict content on Synapse using the sharing settings and conditions for use. 
 ---
+
 ## Access and Content Restrictions
 Synapse content is subject to two control settings: the `Sharing setting` and `Conditions for Use.` The `Sharing setting` determines _with whom_ content is shared. `Conditions for Use` govern _how_ content can be used. 
 
@@ -19,7 +20,7 @@ The `Sharing setting` is shown on the upper right hand side of the project’s h
 ![sharing button examples]({{site.url}}/assets/images/sharing_buttons_examples.png)
 
 #### Creating a team
-If you want to share a project with a specific group of people, you can create a team. Any Synapse user can create a team and invite other Synapse users to join their team. Only after the invited user accepts this invitation is he/she added to the team. Similarly, any Synapse user can request to be added to a team, but will not be added until a team administrator approves the request.
+If you want to share a project with a specific group of people, you can create a team. Any Synapse user can create a team and invite other Synapse users to join their team. Only after the invited user accepts this invitation is he/she added to the team. Similarly, any Synapse user can request to be added to a team.
 
 ### Sharing content within a project 
 By default, all content residing within a project **inherits** the project `Sharing settings` that you specify for the project. You may change this by creating a local `Sharing setting` on any `folder, file` or `table.` If you change the `Sharing setting` on a folder all content within that folder will inherit that change. Just as your are able to control who can access your project, you can also restrict or open portions of your project using the `Sharing setting` for a folder or subfolder.
@@ -33,14 +34,10 @@ Inheritance is illustrated in the example below. In the diagram, the project car
 **Users are responsible for determining the appropriate `Conditions for Use` for any data they upload into Synapse. **
 
 ### Data that does not require Conditions for Use
-Data in Synapse without `Conditions for Use` may be shared with all Synapse users. Typically these data are:  
-* Nonhuman data
-     * Human data that is:
-     * Publicly available elsewhere
-     * Anonymous data
-     * De-identified data with no known sharing or use restrictions
-     * Self-contributed data unambiguously consented for open data sharing
-_It is important to note that `Conditions for Use` cannot be set for Synapse `wiki`; `wiki` are not designed to house data and therefore do not have `Conditions for Use` as a feature._
+
+Open Data in Synapse are data without `Conditions for Use.` They can be used by any registered Synapse users authorized to view the project/folder/file/table (based on sharing setting) for research purpose. Typically Open Data are:
+* Data from model organism, species or strain
+* Non-biological data such as presentations, results or images
 
 ### Data that does require Conditions for Use (“Controlled Use” data)
 `Conditions for Use` are typically applied in order to comply with the terms under which the data in the `files/tables` were collected or with other human subjects regulations. In Synapse, data that carries `Conditions for Use` is labeled as **Controlled Use**. Examples of Controlled Use data include:

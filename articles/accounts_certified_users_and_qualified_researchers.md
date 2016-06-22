@@ -1,7 +1,7 @@
 ---
 title: "Accounts, Certified Users and Qualified Researchers"
 layout: article
-excerpt:
+excerpt: Find out about the different levels of users and the privileges associated with each type of credential. 
 ---
 
 ### About Accounts, Certification and Qualified Researchers
@@ -26,18 +26,16 @@ A user's ability to download files/tables depends on his/her credentials and, ad
 Anyone can browse Synapse anonymously to review the platform features and resources, including the catalog of public `Projects` and `Files/Tables`. However, anonymous users cannot create `Projects` in Synapse nor can they upload or download `Files` or `Tables`. 
 
 ## Registered user
-Registered Synapse users can create `Projects` and `Wikis`. Registered users can download non-controlled content like data, code, and results, and request access to Controlled Use content. Further, registered users can collaborate with other Synapse users and create teams. 
 
-Registering is easy. Anyone over the age of 13 may register for a Synapse account. All you have to do is click on the "Register for a Synapse Account" icon, (1) enter your email, and first and last names in the dialog that appears, (2) read and agree to the Synapse [Terms and Conditions of Use](https://s3.amazonaws.com/static.synapse.org/governance/SageBionetworksSynapseTermsandConditionsofUse.pdf?v=4) and (3) look out for an email with the password setup instructions. Once you have an account you can edit your profile description directly in Synapse and/or by importing profile information from your [LinkedIn](https://www.linkedin.com) account.
+Registered Synapse users can create `Projects` and `Wikis`. They can collaborate with other registered Synapse users and create teams. Registered users can download open access content like data, code, and results, and request access to Controlled Use content. Access to Controlled Use content is granted to investigators who fulfill additional conditions as described in the 'Conditions for Use' for that content. 
 
 <form action="https://www.synapse.org/#!RegisterAccount:0">
     <input type="submit" value="Register">
 </form>
 	
 ## Certified user
-Certified users are authorized to use the full Synapse functionality. In order to ensure that users wishing to interact more freely within Synapse are familiar with the [Synapse Commons Data Use Procedure](https://s3.amazonaws.com/static.synapse.org/governance/SynapseCommonsDataUseProcedure.pdf?v=4), **users must pass a short quiz on the content of this tutorial (18 questions, approximately 20 minutes) to become certified.**
 
-Like registered users, certified Synapse users can create `Projects` and construct `Wikis`, access non-controlled content, and request access to Controlled Use content. Additionally, Certified users can upload content (e.g., `Files, Tables`) and can set the provenance relationships connecting this content. Certified users with a validated profile can request access to Bridge, Controlled Use data derived from ResearchKit apps. 
+Certified users are authorized to use the full Synapse functionality. In order to ensure that users wishing to interact more freely within Synapse are familiar with the [Synapse Commons Data Use Procedure](https://s3.amazonaws.com/static.synapse.org/governance/SynapseCommonsDataUseProcedure.pdf?v=4), **users must pass a short quiz (15 questions, approximately 20 minutes) to become Synapse certified.**
 
 <form action="https://www.synapse.org/#!Quiz:">
     <input type="submit" value="Become a Certified User">

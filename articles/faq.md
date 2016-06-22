@@ -1,7 +1,7 @@
 ---
 title: "Synapse FAQ"
 layout: article
-excerpt: 
+excerpt: What is Synapse? 
 ---
 
 ## General

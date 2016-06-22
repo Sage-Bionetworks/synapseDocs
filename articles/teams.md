@@ -1,7 +1,7 @@
 ---
 title: "Teams"
 layout: article
-excerpt: 
+excerpt: Easily manage groups of users for purposes of project access, communication, and challenges by forming teams.  
 ---
 
 ## Teams

@@ -1,7 +1,7 @@
 ---
 title: "Synapse Wikis"
 layout: article
-excerpt: 
+ excerpt: Create wikis to provide narrative content for your research. 
 ---
 
 ## Overview
