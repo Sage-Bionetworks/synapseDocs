@@ -51,6 +51,29 @@ pip install synapseclient
 {% endhighlight %}
 {% endtab %}
 
+
+{% tab Java %}
+{% highlight xml %}
+<!-- 
+Using Maven, add the following block to your pom.xml.
+Note, you should set the version to the most recent 'repo' version, found in the footer of www.synapse.org
+-->
+<distributionManagement>
+	<repository>
+		<id>sagebionetworks</id>
+		<name>sagebionetworks-releases</name>
+		<url>http://sagebionetworks.artifactoryonline.com/sagebionetworks/libs-releases-local</url>
+	</repository>
+</distributionManagement>
+
+<dependency>
+	<groupId>org.sagebionetworks</groupId>
+	<artifactId>synapseJavaClient</artifactId>
+	<version>See comment above</version>
+</dependency>
+{%endhighlight %}
+{% endtab %}
+
 {% tab Python %}
 {% highlight python %}
 pip install synapseclient
@@ -111,6 +134,29 @@ synapse create Project -name "My uniquely named project"
 	{% endhighlight %}
 {% endtab %}
 
+
+	{% tab Java %}
+	{% highlight java %}
+import org.sagebionetworks.client.*;
+import org.sagebionetworks.repo.model.*;
+
+public static String PROD_REPO_URL = "https://repo-prod.prod.sagebase.org/repo/v1";
+public static String PROD_AUTH_URL = "https://repo-prod.prod.sagebase.org/auth/v1";
+public static String PROD_FILE_URL = "https://repo-prod.prod.sagebase.org/file/v1";
+
+SynapseClient synapseClient = new SynapseClientImpl();
+synapseClient.setSessionToken(sessionToken);
+synapseClient.setRepositoryEndpoint(PROD_REPO_URL);
+synapseClient.setAuthEndpoint(PROD_AUTH_URL);
+synapseClient.setFileEndpoint(PROD_FILE_URL);
+
+Project myProject = new Project();
+myProject.setName("My uniquely named project");
+myProject = synapseClient.createEntity(myProject);
+System.out.println("Created a project with Synapse id " + myProject.getId());
+	{%endhighlight %}
+	{% endtab %}
+
     {% tab Python %}
 	{% highlight python %}
 import synapseclient
@@ -153,6 +199,12 @@ synapse onweb syn123  #where syn123 is replaced with the synapse Id of your proj
 	{% endhighlight %}
 {% endtab %}
 
+    {% tab Java %}
+	{% highlight java %}
+java.awt.Desktop.getDesktop().browse("https://www.synapse.org/#!Synapse:"+myProject.getId());
+	{%endhighlight %}
+	{% endtab %}
+
     {% tab Python %}
 	{% highlight python %}
 syn.onweb(myProj)
@@ -191,6 +243,19 @@ synapse onweb syn###
 where syn### is the Synapse Id of your created project.  Then editing the wiki using the web client.
 	{% endhighlight %}
 {% endtab %}
+
+    {% tab Java %}
+	{% highlight java %}
+import org.sagebionetworks.repo.model.wiki.WikiPage;
+
+WikiPage page = new WikiPage();
+page.setTitle("Data Summary");
+page.setMarkdown("* Cell growth look normally distributed\n" + 
+		"* There is evidence of inverse growth between these two cell lines");
+synapseClient.createWikiPage(myProject.getId(), ObjectType.ENTITY, page);
+	{%endhighlight %}
+	{% endtab %}
+
 
     {% tab Python %}
 	{% highlight bash %}
@@ -237,6 +302,14 @@ synapse create Folder name="results" parentId=syn123  #where syn123 is replaced 
 	{% endhighlight %}
 	{% endtab %}
 
+    {% tab Java %}
+	{% highlight java %}
+Folder resultsFolder = new Folder();
+resultsFolder.setParentId(myProject.getId());
+resultsFolder.setName("results");
+	{%endhighlight %}
+	{% endtab %}
+
     {% tab Python %}
 	{% highlight python %}
 results_folder = Folder(name='results', parent=myProj)
@@ -271,6 +344,21 @@ Lets upload a local file `data/cell_lines_raw_data.csv` into this newly created 
 
 synapse add data/cell_lines_raw_data.csv --parentId=syn123  --annotations '{"foo": "bar", "number1":42, "number2": 3.14}'
 
+	{% endhighlight %}
+	{% endtab %}
+
+    {% tab Java %}
+	{% highlight java %}
+import org.sagebionetworks.repo.model.file.S3FileHandle;
+
+Long storageLocationId = null;
+Boolean generatePreview = true;
+Boolean forceRestart = null;
+S3FileHandle result = synapseClient.multipartUpload(file, storageLocationId, generatePreview, forceRestart);
+
+FileEntity fileEntity = new FileEntity();
+fileEntity.setDataFileHandleId(result.getId());
+fileEntity = synapseClient.createEntity(fileEntity);
 	{% endhighlight %}
 	{% endtab %}
 
@@ -331,6 +419,29 @@ synapse add images/plot_2.png --parentId=syn123  \
 --executed https://github.com/Sage-Bionetworks/synapseTutorials
 {% endhighlight %}
 {% endtab %}
+
+	 {% tab Java %}
+	{% highlight java %}
+import org.sagebionetworks.repo.model.provenance.*;
+
+Activity newActivity = new Activity();
+newActivity.setName("plot distributions");
+newActivity.setDescription("Generate histograms for demo");
+Set<Used> used = new HashSet<Used>();
+UsedEntity usedEntity = new UsedEntity();
+usedEntity.setWasExecuted(false);
+Reference fileEntityReference = new Reference();
+fileEntityReference.setTargetId(rawDataFileEntity.getId());
+usedEntity.setReference(fileEntityReference);
+UsedURL usedURL = new UsedURL();
+usedURL.setWasExecuted(true);
+usedURL.setUrl("https://github.com/Sage-Bionetworks/synapseTutorials");
+used.add(usedEntity);
+used.add(usedURL);
+newActivity.setUsed(used);
+newActivity = synapseClient.createActivity(newActivity);	
+    {%endhighlight %}
+	{% endtab %}
 
     {% tab Python %}
 	{% highlight python %}
