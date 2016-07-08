@@ -42,7 +42,7 @@ I commit myself to:
 
 The Synapse [Oath](https://www.synapse.org/#!Synapse:syn3722562/wiki/390754){:target="_blank"} (part of the profile validation process) further reinforces these principles.
 
-### Oversight, Audits, and Adjudication
+### Oversight, Audits, and Adjudication<a name="oversight-audits-and-adjudication"></a>
 
 The Synapse Access and Compliance Team (ACT) monitors public activities on Synapse through periodic audits to assess compliance with the Synapse governance policies. For example, through these audits, the ACT verifies that public content shared on Synapse has appropriate `Conditions for Use`. The ACT does not monitor activities or content placed in private `Projects`.
 The ACT supports ethical use of Synapse, including adjudicating suspected unauthorized and/or unethical use of data, as well as “unsportsmanlike” behavior within the Synapse research commons. The ACT relies on the community of researchers and research participants for vigilance against unauthorized and/or unethical use of Synapse. Additionally, we rely on the community to hold itself to the highest standard of collegial behavior. People unable or unwilling to meet these standards may be expelled from Synapse.

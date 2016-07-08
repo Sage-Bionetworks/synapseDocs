@@ -405,3 +405,13 @@ input.gsc-search-button-v2 {
     background-color: #f5f5f5;
     border-radius: 3px;
 }
+
+#bootstrap-overrides .navbar-inverse .nav .active > a,
+.navbar-inverse .nav .active > a:hover,
+.navbar-inverse .nav .active > a:focus,
+.navbar-inverse .nav .active > a:visited
+ {
+    background-color: #1e7098;
+    border-bottom: 3px solid white;
+    color: #f0ad4e;
+}

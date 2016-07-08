@@ -4,7 +4,7 @@ layout: article
 excerpt: Find out about the three levels of Synapse users and the privileges and responsibilities associated with each level 
 ---
 
-## About Accounts, Certification and Qualified Researchers
+## About Accounts, Certification and Profile Validation
 There are three levels of users in Synapse: `Anonymous`, `Registered`, and `Certified`. 
 The table below summarizes the user privileges for each level.  
 
@@ -30,7 +30,7 @@ You are solely responsible for your actions on Synapse. You are required to abid
 Anyone over the age of 13 may create a Synapse account. From your Synapse profile homepage, you can edit your profile information, update your email account, and change your password. 
 All user activity on Synapse is recorded for auditing purposes. So, although they can be updated, Synapse accounts cannot be deleted. All of your public activities are and will remain publically viewable. All of your activities within private projects are and will remain viewable to the people within that project. 
 
-## Anonymous Users
+## Anonymous Users<a name="anonymous-users"></a>
 Anyone can browse Synapse anonymously to review the platform features and resources, including the catalog of public `Projects`, `Files`, and `Tables`. However, `Anonymous Users` cannot create `Projects` in Synapse, add `Wiki` content, comment in a `Discussion Forums`, nor can they upload or download `Files` or `Tables`. 
 
 ## Registered Users

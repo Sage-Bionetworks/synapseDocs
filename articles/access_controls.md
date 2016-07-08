@@ -7,7 +7,7 @@ excerpt: Synapse has two content controls -- the Sharing setting and Conditions 
 ## Overview
 Synapse has two content controls: the `Sharing setting` and `Conditions for Use.` The `Sharing setting` is an access control. It determines _who_ has access to Synapse content. `Conditions for Use` are for data governance. They determine _how_ data can be used. 
 
-## Sharing setting
+## Sharing setting<a name="sharing-setting"></a>
 You can use the `Sharing setting` to invite people to view or collaborate on a Synapse `Project`. There are two `Sharing settings`: **Public** and **Private**. Synapse content with the **Public** `Sharing setting` is visible to all Synapse users. By contrast, the **Private** `Sharing setting` limits who can see content. **By default, new `Projects` are Private.** 
 {% include important.html content="Synapse users are responsible for determining the appropriate `Sharing Setting` for any content they upload into Synapse." %}
 
@@ -24,13 +24,16 @@ Local `Sharing settings` are illustrated in the diagram below. `Projects` A and 
 
 <img src= "/assets/images/synapse_sharingsetting.jpg">
 
-## Conditions for Use<a name="conditions_of_use"></a>
+## Conditions for Use<a name="conditions-for-use"></a>
 Some data requires data governance to appropriately manage its use. In Synapse this data is called `Controlled Data` and it is protected by `Conditions for Use`. `Conditions for Use` are typically applied in order to comply with the terms under which the data were collected or with other human subjects regulations. For example, human 'omic' data may have `Conditions for Use` imposed by informed consent requirements, legal contracts, or other privacy requirements. It is also appropriate to add `Condition for Use` to data collected from "vulnerable" populations and to content that could potentially harm individuals or groups if misused. 
 
 {% include important.html content="Controlled Data may not be redistributed." %}
 `Controlled Data` can only be downloaded and used by authorized Synapse users. `Controlled Data` is not transferable unless explicitly specified otherwise. In other words, you cannot share `Controlled Data` with collaborators. Each Synapse user wishing to access `Controlled Data` must individually agree to the `Conditions for Use` to access that data.
 
+<a name="discussion-sharing-setting"></a>
+
 {% include important.html content="Synapse users are responsible for determining the appropriate Conditions for Use for any data they upload into Synapse." %}
+
 It is important to note that `Conditions for Use` cannot be set for Synapse `Wikis` or `Discussion Forums`: they are not designed to house data and therefore do not have local `Conditions for Use` as a feature. 
 
 ### Data that does not require Conditions for Use
@@ -64,7 +67,7 @@ Human data that are:
 <br>
 Additionally, use of certain data may require independent review and monitoring of research by an ethics committee (for example, an IRB). This ensures that use of the data meets all applicable human subjects research regulations. 
 
-### How to set Conditions for Use?
+### How to set Conditions for Use?<a name="how-to-set-conditions-for-use "></a>
 If you would like to set `Conditions for Use` for an entire `Project`, please contact the Synapse Access and Compliance Team (ACT) directly for assistance (<mailto:act@synapse.org>). 
 
 By default, the `Folders`, `Files` and `Tables` residing within a `Folder` or `Project` inherit the `Conditions for Use` of the parent `Folder` or `Project`. As with `Sharing settings`, you can set local `Conditions for Use` for individual `Folders`, `Files` and `Tables` but only **in addition to** the existing parent `Project`/`Folder’s` `Conditions for Use`. In other words, every `Folder`, `File` or `Table` has the `Conditions for Use` of its parent `Project`/`Folder`, and may have **additional** local `Conditions for Use` as needed. You cannot create `Folder`, `File` or `Table` that has fewer `Conditions for Use` than its parent `Project`/`Folder` or that has `Conditions for Use` that conflict with the `Conditions for Use` of the parent `Project`/`Folder`.
