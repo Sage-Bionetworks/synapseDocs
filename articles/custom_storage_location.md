@@ -72,8 +72,7 @@ For read-write permissions (you allow Synapse to upload and retrieve files)
 
 ## **Downloading requester pays data**
 
-Data kept in Synapse that is large enough to have significant download costs, there is a separate method for downloading.
-Steps to take:
+For data made available through Synapse that is large enough to incur significant download costs, there is a separate method for downloading:
 
 1. Create a new AWS S3 bucket in the us-east-1 region under your account (see [Creating a download bucket](https://www.synapse.org/#!Synapse:syn3316305/wiki/217751) for details)
 2. Use the s3FileCopy API to copy the files to that new bucket

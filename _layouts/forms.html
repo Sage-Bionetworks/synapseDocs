@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en'>
+
+<meta charset="utf-8">
+<body class="font-size-1-5x">
+{% include header.html %}
+<div class='container-fluid' id="bootstrap-overrides">
+    <div class='row-fluid'>
+        <div class='span12'>
+            <div class='panel panel-default padding-15'>
+                {{ content }}
+                <h2>Need More Help!</h2>
+                <p>Try posting a question to our
+                    <a href='https://www.synapse.org/#!SynapseForum:default'>Forum</a>.
+                <p>Let us know what was unclear or what has not been
+                    covered. Reader feedback is key to making the
+                    documentation better, so please let us know or open an <a href="https://github.com/Sage-Bionetworks/synapseDocs/issues">issue</a> in our Github repository (<a href="https://github.com/Sage-Bionetworks/synapseDocs/">Sage-Bionetworks/synapseDocs</a>).</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% include footer.html %}
+</body>
+</html>

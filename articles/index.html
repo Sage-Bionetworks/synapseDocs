@@ -10,8 +10,7 @@ layout: default
 </style>
 
 <div class="container-fluid" style="padding-top: 25px"> 
-  <div class="row" style="text-align: center;">
-    <h2>Synapse Docs User Guide</h2>
+  <div class="panel panel-default padding-15" style="text-align: center;">
     <h4>Use the articles on this page to learn how to use Synapse</h4>
   </div>
 {% assign loopindex = 0 %}
@@ -42,7 +41,7 @@ layout: default
     </div>
 </div>
 {% else %}
-<!--<div class="span0">{{ page.title }}</div>-->
+<div class="span0">{{ page.title }}</div>
 {% endif %}
 {% endif %}
 {% endfor %}
