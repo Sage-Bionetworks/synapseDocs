@@ -1,7 +1,8 @@
 ---
 title: "Teams"
 layout: article
-excerpt: Easily manage groups of users for purposes of project access, communication, and challenges by forming teams.  
+excerpt: Form teams to easily manage groups of users for purposes of project access, communication, and challenges.  
+category: howto
 ---
 
 <style>

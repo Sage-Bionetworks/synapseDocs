@@ -2,6 +2,7 @@
 title: Annotations and Queries
 layout: article
 excerpt: Learn about annotations, how to assign and modify them, and how to query them for analysis. 
+category: howto
 ---
 
 <style>

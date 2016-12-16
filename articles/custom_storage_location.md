@@ -1,7 +1,8 @@
 ---
-title: "Creating Custom Storage Locations"
+title: "Custom Storage Locations"
 layout: article
 excerpt: Follow these steps to set up an external S3 bucket and access it with Synapse. 
+category: howto
 ---
 
 ## **Creating a download bucket**

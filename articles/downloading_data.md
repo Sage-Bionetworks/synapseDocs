@@ -2,6 +2,8 @@
 title: "Downloading Data"
 layout: article
 excerpt: Learn the best practices of finding and downloading files.
+category: intro
+order: 3
 ---
 
 # Overview

@@ -2,6 +2,7 @@
 title: "Provenance"
 layout: article
 excerpt: Learn about how Synapse visualizes and tracks the relationships of files and projects for reproducibility.  
+category: howto
 ---
 
 <style>

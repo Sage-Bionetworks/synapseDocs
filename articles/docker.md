@@ -2,6 +2,7 @@
 title: Docker Registry
 layout: article
 excerpt: The Synapse Docker registry provides a space for Synapse users to store and distribute their Docker images per Synapse project.
+category: howto
 ---
 
 ## Synapse Docker Registry
