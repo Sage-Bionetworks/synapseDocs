@@ -203,6 +203,7 @@ synapse get -r syn2390898
 
 {% tab Python %}
 {% highlight python %}
+# This feature is only available in synapseclient >= 1.6.1
 import synapseutils
 import synapseclient
 syn = synapseclient.login()
