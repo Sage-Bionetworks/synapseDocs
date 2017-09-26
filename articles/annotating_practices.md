@@ -13,18 +13,19 @@ category: inpractice
 </style>
 
 # Overview 
-There are numerous things to consider when annotating your data:
-1- 
+To annotate your data properly it is important to consider the nature of the data you are sharing, how you are sharing it, and how you anticipate users querying it. 
 
-# Plan Ahead
+# Plan file and folder structure
 Before creating a project think about what data and metadata will be shared, who it will be shared with, and if there are any restrictions on the use of the data that people you are sharing it with have to comply with.
 
-## General annotation strategy
+# Determining a metadata dictionary
 
 ## Annotation dictionaries
 Sage Bionetworks currently maintains a set of key-value pairs that are reccommended for use by existing Synapse projects. Using existing metadata dictionaries enable cross-project queries so that any of your data files can be found by another user. 
 
-### Annotation Modules
+## Annotation Modules
 
-# Creating a manifest
+# Applying annotations in bulk
+
+# Updating annotations
 
