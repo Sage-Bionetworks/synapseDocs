@@ -27,5 +27,13 @@ Sage Bionetworks currently maintains a set of key-value pairs that are reccommen
 
 # Applying annotations in bulk
 
-# Updating annotations
+## Using the synapse client
+
+## Using utilities
+
+# Using annotations in your project
+
+## Using file views
+
+## Querying programmatically 
 
