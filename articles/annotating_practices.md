@@ -28,11 +28,15 @@ Sage Bionetworks currently maintains a set of key-value pairs that are reccommen
 * Navigate to the GitHub repository that we use to maintain and update our dictionary: http://www.github.com/sage-bionetworks/synapseAnnotations.  
 
 ## Annotation modules
-It is not recommended to apply all annotations to all projects, as many projects produce different types of resources that require data-specific annotations. To accomodate this the Sage Bionetworks annotation dictionaries can be broken down into 'modules' that represent different classes of data or disease areas. These modules are represented by the checkboxes on the left side of the [web tool](https://shiny.synapse.org/users/nsanati/annotationUI/).
+It is not recommended to apply all annotations to all projects, as many projects produce different types of resources that require data-specific annotations. To accomodate this the Sage Bionetworks annotation dictionaries can be broken down into 'modules' that represent different classes of data or disease areas. These modules are represented by the checkboxes on the left side of the [web tool](https://shiny.synapse.org/users/nsanati/annotationUI/), highlighted in red below.
+
+<img id="image" style="float:right" src="/assets/images/annotationUIwithModules.png">
 
 # Applying annotations in bulk
+There are multiple ways to apply annotations to files. The [annotation documentation page]() describes how to ascribe annotations to files within your workflow using the R, Python or web Synapse clients. This section will describe how to annotate files in bulk as you might want to do when preparing to share data with the broader scientific community. 
 
-## Using the synapse client
+## Using the synapse command-line client
+--> this is only available in the python client, would like to wait until we cna do this at command line
 
 ## Using utilities
 
