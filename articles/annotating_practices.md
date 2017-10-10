@@ -36,13 +36,14 @@ It is not recommended to apply all annotations to all projects, as many projects
 There are multiple ways to apply annotations to files. The [annotation documentation page](synapseDocs/articles/annotation_and_query.md) describes how to ascribe annotations to files within your workflow using the R, Python or web Synapse clients. This section will describe how to annotate files in bulk as you might want to do when preparing to share data with the broader scientific community. 
 
 ## Using the synapse command-line client
---> this is only available in the python client, would like to wait until we can do this at command line
+**this is only available in the python client, would like to wait until we can do this at command line**
 
 ## Using annotation utility package
 Sage Bionetworks also maintains a set of scripts designed to facilitate annotation management, such as auditing and bulk update. This repository is located at a separate GitHub site: https://github.com/sage-bionetworks/synAnnotationUtils 
 
 # Using annotations in your project
 Once your project is adequately annotated you can use those annotations to build customized queries of your data depending.  
+**For this we need to have an example project. I will work on this next time**
 
 ## Using file views
 
