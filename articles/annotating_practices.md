@@ -45,7 +45,8 @@ Sage Bionetworks also maintains a set of scripts designed to facilitate annotati
 Once your project is adequately annotated you can use those annotations to build customized queries of your data depending.  
 `**For this we need to have an example project. I will work on this next time**`
 
+## Querying programmatically 
+
 ## Using file views
 
-## Querying programmatically 
 
