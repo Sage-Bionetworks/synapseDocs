@@ -13,13 +13,13 @@ category: inpractice
 </style>
 
 # Overview 
-To annotate your data properly it is important to consider the nature of the data you are sharing, how you are sharing it, and how you anticipate users querying it. For example, proper annotations will enable users to be able to find data by biological area of interest,data type that suits a particular form of analysis, or data derived from a project of interest.
+To annotate your data properly, it is important to consider the nature of the data you are sharing, how you are sharing it, and how you anticipate users querying it. For example, proper annotations will enable users to be able to find data by biological area of interest, data type that suits a particular form of analysis, or data derived from a project of interest.
 
 # Plan file and folder structure
-Before creating a project think about what data and metadata will be shared, who it will be shared with, and if there are any restrictions on the use of the data that people you are sharing it with have to comply with. Each Synapse Folder can be restricted to a set of users or Team of users, so data with the same sharing permissions should be in the same folder if possible.
+Before creating a project think about what data and metadata will be shared, who it will be shared with, and if there are any restrictions on the use of the data that people you are sharing it with have to comply with. Each Synapse Folder can be restricted to a set of users or [Team of](http://docs.synapse.org/articles/teams.html) users, so data with the same sharing permissions should be in the same folder if possible.
 
 # Determining a metadata dictionary
-Due to the nature of metadata, it is important to have a fixed metadata dictionary across a project. This prevents conflicts in capitalization (e.g. rnaseq vs rnaSeq) or spacing (e.g. gene expression vs. geneExpression) that would break most programmatic queries.
+Due to the nature of metadata, it is important to have a fixed metadata dictionary across a project. This prevents conflicts in capitalization (e.g. rnaseq vs. rnaSeq) or spacing (e.g. gene expression vs. geneExpression) that would break most programmatic queries.
 
 ## Annotation dictionaries
 Sage Bionetworks currently maintains a set of key-value pairs that are reccommended for use by existing Synapse projects. Using existing metadata dictionaries enable cross-project queries so that any of your data files can be found by another user. There are multipel ways to exploer the annotation dictionaries maintained by Sage.
