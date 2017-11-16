@@ -22,10 +22,10 @@ Before creating a project think about what data and metadata will be shared, who
 Due to the nature of metadata, it is important to have a fixed metadata dictionary across a project. This prevents conflicts in capitalization (e.g. rnaseq vs. rnaSeq) or spacing (e.g. gene expression vs. geneExpression) that would break most programmatic queries.
 
 ## Annotation dictionaries
-Sage Bionetworks currently maintains a set of key-value pairs that are reccommended for use by existing Synapse projects. Using existing metadata dictionaries enable cross-project queries so that any of your data files can be found by another user. There are multipel ways to exploer the annotation dictionaries maintained by Sage.
-* Browse the metadata dictionaries using our [web tool](https://shiny.synapse.org/users/nsanati/annotationUI/)
-* Search the [Synapse Table](https://www.synapse.org/#!Synapse:syn10242922) of available key-value pairs
-* Navigate to the GitHub repository that we use to maintain and update our dictionary: http://www.github.com/sage-bionetworks/synapseAnnotations.  
+Sage Bionetworks currently maintains a set of key-value pairs that are reccommended for use by existing Synapse projects. Using existing metadata dictionaries enable cross-project queries so that any of your data files can be found by another user. There are multiple ways to explore the annotation dictionaries maintained by Sage.
+* **Browse** the metadata dictionaries using our [web tool](https://shiny.synapse.org/users/nsanati/annotationUI/)
+* **Search** the [Synapse Table](https://www.synapse.org/#!Synapse:syn10242922) of available key-value pairs
+* **Navigate** to the GitHub repository that we use to maintain and update our dictionary: http://www.github.com/sage-bionetworks/synapseAnnotations.  
 
 ## Annotation modules
 It is not recommended to apply all annotations to all projects, as many projects produce different types of resources that require data-specific annotations. To accomodate this the Sage Bionetworks annotation dictionaries can be broken down into 'modules' that represent different classes of data or disease areas. These modules are represented by the checkboxes on the left side of the [web tool](https://shiny.synapse.org/users/nsanati/annotationUI/), highlighted in red below.
@@ -33,12 +33,12 @@ It is not recommended to apply all annotations to all projects, as many projects
 <img id="image" style="float:right" src="/assets/images/annotationUIwithModules.png">
 
 # Applying annotations in bulk
-There are multiple ways to apply annotations to files. The [annotation documentation page](synapseDocs/articles/annotation_and_query.md) describes how to ascribe annotations to files within your workflow using the R, Python or web Synapse clients. This section will describe how to annotate files in bulk as you might want to do when preparing to share data with the broader scientific community. 
+There are multiple ways to apply annotations to files. The [annotation documentation page](synapseDocs/articles/annotation_and_query.md) describes how to assign annotations to files within your workflow using the R, Python or web Synapse clients. This section will describe how to annotate files in bulk as you might want to do when preparing to share data with the broader scientific community. 
 
 ## Using the synapse command-line client
 `**this is only available in the python client, would like to wait until we can do this at command line**`
 
-## Using annotation utility package
+## Using the annotation utility package
 Sage Bionetworks also maintains a set of scripts designed to facilitate annotation management, such as auditing and bulk update. This repository is located at a separate GitHub site: https://github.com/sage-bionetworks/synAnnotationUtils 
 
 # Using annotations in your project
