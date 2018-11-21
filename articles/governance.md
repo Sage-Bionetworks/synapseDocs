@@ -10,7 +10,7 @@ order: 1
 
 Synapse operates under comprehensive governance policies. These policies delineate Synapse users’ rights and responsibilities. They also specify the rights and responsibilities of Sage Bionetworks and of the Synapse Access and Compliance Team (ACT). 
 
-### [Terms and Conditions of Use](https://s3.amazonaws.com/static.synapse.org/governance/SageBionetworksSynapseTermsandConditionsofUse.pdf?v=4){:target="_blank"}
+### [Terms and Conditions of Use](https://s3.amazonaws.com/static.synapse.org/governance/SageBionetworksSynapseTermsandConditionsofUse.pdf?v=5){:target="_blank"}
 
 The Synapse Terms and Conditions of Use establishes the use, disclaimers, and limitation of liability governing the use of Synapse. For example, this document states users must adhere to all applicable laws and regulations to protect the privacy of research participants' data. By using Syanpse, you are agreeing to abide by each of these terms and conditions.
 
@@ -18,7 +18,7 @@ The Synapse Terms and Conditions of Use establishes the use, disclaimers, and li
 
 The Synapse Data Use Procedure describes the standard operating procedures for use of data within the Synapse. For example, it defines `Open Data` and `Controlled Data`. This policy clarifies the requirements for uploading data to Synapse, for example that human data must be de-identified according to HIPAA standards and all applicable privacy laws and regulations prior to being uploaded to Synapse. This policy also addresses the requirements for using `Open Data` and `Controlled Data` on Synapse. For example, to access some data sets Synapse users are required to show proof of review and approval of their data analysis plan by an ethics committee or IRB.
 
-### [Privacy Policy](https://s3.amazonaws.com/static.synapse.org/governance/SynapsePrivacyPolicy.pdf?v=4){:target="_blank"}
+### [Privacy Policy](https://s3.amazonaws.com/static.synapse.org/governance/SynapsePrivacyPolicy.pdf?v=5){:target="_blank"}
 
 The Privacy Policy explains how Sage Bionetworks aims to protect personal information received in connection with Synapse 
 from casual visitors and `Registered Users`. Personal information may include your name, email, or other information that 

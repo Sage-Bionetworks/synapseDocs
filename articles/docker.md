@@ -44,7 +44,7 @@ docker tag f8d79ba03c00 docker.synapse.org/syn12345/mytestrepo
 ```
 
 **Build your own image from a Dockerfile**
-When building a Docker image from a Dockerfile simply add a `-t` to the docker build command with the correct Synapse Docker registry tag.
+When building a Docker image from a Dockerfile, add a `-t` to the docker build command with the correct Synapse Docker registry tag.
 
 ```
 docker build -t  docker.synapse.org/syn12345/my-repo path/to/dockerfile
@@ -72,7 +72,7 @@ docker push docker.synapse.org/syn12345/my-repo
 ```
 
 ## Using Docker images stored in the Synapse Docker Registry
-To access the Docker images stored in Synapse, simply use the `docker pull` command.
+To access the Docker images stored in Synapse, use the `docker pull` command.
 
 {% include tip.html content="By default, if you do not specify a tag, it will attach latest as the tag.  If you specified a tag on your repository, be sure to pull the repository with the tag." %}
 ```

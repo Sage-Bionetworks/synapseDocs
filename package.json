@@ -6,17 +6,16 @@
     "alt": "0.15.4",
     "browserify": "11.0.0",
     "cheerio": "0.19.0",
-    "esprima-fb": "15001.1.0-dev-harmony-fb",
+    "esprima-fb": "^15001.1.0-dev-harmony-fb",
     "jscs": "1.13.1",
     "lunr": "0.5.11",
     "ramda": "0.13.0",
     "react": "0.13.1",
     "react-tools": "0.13.1",
     "reactify": "1.1.0",
-    "superagent": "1.2.0",
+    "superagent": "3.7.0",
     "through2": "0.6.3",
-    "uglify-js": "2.6.0",
-    "chance": "^1.0.3"
+    "uglify-js": "2.6.0"
   },
   "scripts": {
     "build_search": "node ./_site/js/search/build_scripts/index_builder.js",
@@ -24,9 +23,10 @@
     "test": "jscs ./js"
   },
   "devDependencies": {
-    "react":"0.13.1",
     "babel-eslint": "4.1.6",
     "escope": "3.3.0",
-    "eslint": "1.10.3"
-  }
+    "eslint": "^1.10.3"
+  },
+  "repository": "github:Sage-Bionetworks/synapseDocs",
+  "license": "SEE LICENSE IN <README.md>"
 }

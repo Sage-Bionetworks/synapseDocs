@@ -3,67 +3,89 @@ title: Synapse Documentation, Welcome to Synapse Documentation
 layout: default
 ---
 
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"
-      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-<div id="bootstrap-overrides" class="container col-xs-12" style="padding-bottom: 100px; padding-left: 100px; color: #666666; line-height: 1.5em; font-size: 1.25em; width: 55%;">
-  <h2>Synapse Docs</h2>
-  <span class="rwd-line">Synapse is an open source software platform that </span>
-  <span class="rwd-line">scientists use to carry out, track, and communicate their
-  research in real time.</span>
-  </br>
-  </br>
-  <a  style="float:left; color: white; background-color: #1e7098; text-shadow: 0 0 0;" href="/articles/getting_started.html" type="button" class="btn btn-secondary">GET STARTED</a>
-</div>
 
-<div class="middle">
-  <div class="section">
-    <div class="row">
-      <div class="col-xs-12 col-sm-3">
-        <div class="action">
-          <h5>
-            <a href="/articles/getting_started.html">
-              <span class="glyphicon glyphicon-ok-circle"></span></br/>
-                Getting Started<br/>
-            <span class="subaction">Learn the fundamental Synapse features with our step-by-step tutorial.</span>
-           </a>
-          </h5>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-3">
-        <div class="action">
-          <h5>
-            <a href="/articles/api_documentation.html">
-              <span class="glyphicon glyphicon-file"></span></br/>
-                API Docs<br/>
-            <span class="subaction">Access language-specific functions for interacting with Synapse.</span>
-          </a>
-          </h5>
-        </div>
-       </div>
-      <div class="col-xs-12 col-sm-3">
-        <div class="action">
-          <h5>
-            <a href="/articles/">
-              <span class="glyphicon glyphicon-book"></span></br/>
-                User Guide<br/>
-            <span class="subaction">Learn to use Synapse through a series of guides.</span>
-          </a>
-          </h5>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-3">
-        <div class="action">
-          <h5>
-            <a href="https://www.synapse.org/#!SynapseForum:default">
-              <span class="glyphicon glyphicon-comment"></span></br/>
-              Forum<br/>
-            <span class="subaction">Ask questions, share your knowledge, or search our knowledgebase.</span>
-           </a>
-          </h5>
-        </div>
-      </div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+<script>
+    $(function () {
+        $('.subject-card').matchHeight();
+    });
+</script>
+
+<div class="row" id="background">
+<div class="col-xs-12 col-md-6 col-lg-6" id="tagline">
+    <h1 id="title">Synapse Documentation</h1>
+    <span>Synapse is a collaborative, open-source research platform that allows teams to share data, track analyses, and collaborate.</span>
+    <br>
+    <a id="gs-button" href="/articles/getting_started.html" type="button" class="btn btn-secondary btn-lg">Get Started</a>
+</div>
+</div>
+<div class="col-xs-12 col-md-12 col-lg-12" id="search-bar">
+    <h3 class="search-title">Search All Articles</h3>
+    <h5 class="search-text">Find articles and examples for using Synapse in your research</h5>
+    <div id="landing-cse">
+        <script>
+            (function() {
+                var cx = '004392328299901121883:dlvsk1-fk4y';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+            $(function() {
+                if (window.location.pathname && window.location.pathname != '/') {
+                    $("ul.nav li a").each(function(){
+                        if($(this).attr("href") == window.location.pathname)
+                            $(this).parent().addClass("active");
+                    })
+                }
+            });
+        </script>
+        <gcse:search></gcse:search>
     </div>
-  </div>
 </div>
-</div>
+<div class="col-xs-12 col-md-12 col-lg-12" id="subjects">
+    <div class="col-xs-12 col-sm-3">
+        <a href="/articles/getting_started.html">
+        <div class="subject-card">
+            <i class="fa fa-power-off"></i>
+            <h5>Getting Started</h5>
+            <hr>
+            <span>New to Synapse? Learn the basics with our step-by-step tutorial.</span>
+        </div>
+        </a>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+        <a href="/articles/">
+        <div class="subject-card">
+            <i class="fa fa-book"></i>
+            <h5>User Guide</h5>
+            <hr>
+            <span>Browse short "How To" articles on leveraging specific features in Synapse.</span>
+        </div>
+        </a>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+        <a href="/articles/api_documentation.html">
+        <div class="subject-card">
+            <i class="fa fa-cog"></i>
+            <h5>API Docs</h5>
+            <hr>
+            <span>Technical documentation for using the R/Python clients and RESTful APIs.</span>
+        </div>
+        </a>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+        <a href="/articles/synapse_in_practice.html">
+        <div class="subject-card">
+            <i class="fa fa-pencil"></i>
+            <h5>Synapse in Practice</h5>
+            <hr>
+            <span>Get ideas for how to use Synapse in your own research with a series of case studies.</span>
+        </div>
+        </a>
+    </div>
 
+</div>
+</div>

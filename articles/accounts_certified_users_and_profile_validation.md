@@ -60,15 +60,21 @@ As a certified user with a validated profile, you can access more features and d
 A validated profile is one where your identity is established through a combination of your profile information, your ORCID, your signed oath, and an external credential. This profile validation enables greater transparency within the research community, promoting a reciprocal relationship between you and participants as data donors. You will need a validated profile prior to requesting access to data collected through research apps.
 
 ### Get Your Profile Validated  
-Go to your [Synapse profile homepage](https://www.synapse.org/#!Profile:v){:target="_blank"} (click your name/picture on upper banner of the screen to get there) and use the links in the purple validation box:
-
-1.	Confirm your user profile is complete including **your full name, current affiliation, and city/country.**
-2.	Link to your ORCID profile. **Make sure your profile is public and populate it with at least one piece of information about yourself in addition to your name.**
-3.	Physically sign (in ink), initial, and submit the Synapse [Oath](/assets/other/oath.html)
-4.	Submit recent (current within the past month) identity attestation documentation. Acceptable forms of documentation, in English, are:
-- A letter from a signing official on letterhead attesting to your identity. _Please note that you can not serve as your own signing official_ ([template here]({{site.url}}/assets/other/signing_official_template.html)) OR
-- A notarized letter attesting to your identity ([template here]({{site.url}}/assets/other/notarized_letter_template.html)) OR
-- A copy of your professional license (e.g., a photocopy of your medical license)
+Go to your [Synapse profile homepage](https://www.synapse.org/#!Profile:v){:target="_blank"} (click your name/picture on upper banner of the screen to get there) and use the links in the validation box:
+1. Confirm your user profile is complete including **your full name, current affiliation, and city/country.**
+1. Link to your ORCID profile. **Make sure your profile is public and populate it with at least one piece of information about yourself in addition to your name.**
+1. Physically sign (in ink), initial, and submit the Synapse [Oath](/assets/other/oath.html)
+1. Submit recent (current within the past month) identity attestation documentation. Acceptable forms of documentation, in English, are:
+* A letter from a signing official on letterhead attesting to your identity. _Please note that you can not serve as your own signing official_ ([template here]({{site.url}}/assets/other/signing_official_template.html)) OR
+* A notarized letter attesting to your identity ([template here]({{site.url}}/assets/other/notarized_letter_template.html)) OR
+* A copy of your professional license (e.g., a photocopy of your medical license)
 _Please note that a copy of a work or university identification badge is not an accepted form of identity attestation documentation._
 
 You will receive a notification email when your profile has been validated and a badge will appear on your Synapse profile homepage.
+
+### Acceptable Documentation for Identity Verification
+Acceptable forms of documentation, in English, are:
+* A letter from a signing official on letterhead attesting to your identity. _Please note that you can not serve as your own signing official_ ([template here]({{site.url}}/assets/other/signing_official_template.html)) OR
+* A notarized letter attesting to your identity ([template here]({{site.url}}/assets/other/notarized_letter_template.html)) OR
+* A copy of your professional license (e.g., a photocopy of your medical license)
+_Please note that a copy of a work or university identification badge is not an accepted form of identity attestation documentation._

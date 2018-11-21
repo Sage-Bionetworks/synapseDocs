@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 layout: article
-excerpt: What is Synapse? 
+excerpt: What is Synapse?
 category: intro
 order: 4
 ---
@@ -27,7 +27,7 @@ For a comprehensive introduction to Synapse see our [Getting Started guide](/art
 We allow groups to get started for free by subsidizing relatively moderate amounts of internal Synapse cloud storage (e.g. 10s of GB). If your needs will exceed this limit we suggest contacting [SynapseInfo@sagebase.org](mailto:SynapseInfo@sagebase.org) for other solutions, including the ability for groups to host their own content either in cloud storage, proxied from [local file servers](/articles/custom_storage_location.html) or as external links.
 
 #### How is Synapse funded?
-[Sage Bionetworks](http://www.sagebase.org){:target="_blank"} provides Synapse services free of charge to the scientific community through generous support from the [*National Cancer Institute (NCI)*](http://www.cancer.gov){:target="_blank"}, the [*National Heart, Lung, and Blood Institute (NIH NHLBI)*](http://www.nhlbi.nih.gov){:target="_blank"}, the [*Children’s Tumor Foundation (CTF)*](http://www.ctf.org/){:target="_blank"}, the [*Alfred P. Sloan Foundation*](http://www.sloan.org/){:target="_blank"}, the [*National Insitute on Aging (NIA)*](https://www.nia.nih.gov/){:target="_blank"}, and the [*National Institute of Mental Health (NIMH)*](http://www.nimh.nih.gov/index.shtml){:target="_blank"}.  
+[Sage Bionetworks](http://www.sagebase.org){:target="_blank"} provides Synapse services free of charge to the scientific community through generous support from the [*National Cancer Institute (NCI)*](http://www.cancer.gov){:target="_blank"}, the [*National Heart, Lung, and Blood Institute (NIH NHLBI)*](http://www.nhlbi.nih.gov){:target="_blank"}, the [*Children’s Tumor Foundation (CTF)*](http://www.ctf.org/){:target="_blank"}, the [*Alfred P. Sloan Foundation*](http://www.sloan.org/){:target="_blank"}, the [*National Insitute on Aging (NIA)*](https://www.nia.nih.gov/){:target="_blank"}, and the [*National Institute of Mental Health (NIMH)*](http://www.nimh.nih.gov/index.shtml){:target="_blank"}.
 
 #### Is Synapse a data analysis platform?
 Not directly. Synapse helps you manage data, analysis and results. However, using the programmatic interfaces built into Synapse makes it easy to set up analytical pipelines and *ad hoc* analysis that interacts with Synapse. By default Synapse uses Amazon’s cloud infrastructure (S3) for storage, making it simple to allocate large compute resources and collocate them next to data storage.
@@ -42,10 +42,10 @@ Anyone age 13 or older may use Synapse. We have highlighted a series of [researc
 The [Terms and Conditions of Use](https://s3.amazonaws.com/static.synapse.org/governance/SageBionetworksSynapseTermsandConditionsofUse.pdf?v=4){:target="_blank"} fully describes the governance terms and conditions of Synapse.  In order to register on Synapse, you must review and agree to the terms of the Synapse Awareness and Ethics Pledge. For more information see the complete Synapse [Governance policies]({{site.url}}/articles/governance.html).
 
 #### Is Synapse open source?
-Yes, Synapse is published under [The MIT Licence](https://github.com/Sage-Bionetworks/file-proxy/blob/develop/LICENSE){:target="_blank"} The source code is available on the [Sage Bionetworks GitHub page](https://github.com/Sage-Bionetworks/){:target="_blank"}. Synapse is also offered free of charge as a hosted Software as a Service (SaaS).
+Yes, Synapse is released under the [Apache 2.0 License](https://github.com/Sage-Bionetworks/Synapse-Repository-Services/blob/develop/LICENSE){:target="_blank"} The source code is available on [GitHub](https://github.com/Sage-Bionetworks/){:target="_blank"}. Synapse is also offered free of charge as a hosted Software as a Service (SaaS) at https://www.synapse.org/.
 
 #### I am a developer - is there API documentation?
-Yes, Synapse is built on top of a RESTful service that is automatically [documented](http://docs.synapse.org/rest). In addition, we have purpose built APIs for [Python](http://docs.synapse.org/python), [R](http://docs.synapse.org/r), Java and a [command line](http://docs.synapse.org/python/CommandLineClient.html) interface.
+Yes, Synapse is built on top of a RESTful service that is automatically [documented](http://docs.synapse.org/rest). In addition, we have purpose built APIs for [Python](https://python-docs.synapse.org/), [R](https://r-docs.synapse.org/), Java and a [command line](https://python-docs.synapse.org/build/html/CommandLineClient.html) interface.
 
 #### How do I set up my own instance of Synapse?
 Synapse was developed with the philosophy to encourage collaboration across institutional boundaries and is therefore provided as “Software As A Service” with a single instance used by all users. This makes it easy both to discover new content and share with new collaborators. We do support private project spaces where content sharing is controlled by the individual user. In addition, Synapse has the ability to reference resources that are stored elsewhere. This allows Synapse to store metadata about the content such as annotations, descriptive wiki pages and provenance but not the actual data. Currently Synapse has specific support for files stored at URLs, on SFTP servers, on AWS S3 and arbitrary file servers (see: [Custom Storage Locations](/articles/custom_storage_location.html)).
@@ -90,7 +90,7 @@ No. Use `Sharing settings` to control who can see the content you create. By def
 Yes. Synapse has an IRB-approved data governance procedure that employs `Conditions for Use` to allow for the sharing of sensitive data in a controlled manner. You can learn more by reading our [Sharing Settings and Conditions for Use](/articles/access_controls.html) documentation and [Governance documentation](/articles/governance.html). If you have questions or would like assistance in applying `Conditions of Use` to your data, please contact the Synapse Access and Compliance Team at [act@sagebase.org](mailto:act@sagebase.org).
 
 #### How do I know the content I put in Synapse will be secure? What security measures does Synapse have?
-Synapse stores content in Amazon Web Services, which provides a layer of security measures designed and implemented by [Amazon](https://aws.amazon.com/security/){:target="_blank"}. While Synapse is an open access site, each user has control over who may access their content by using `Sharing settings`. 
+Synapse stores content in Amazon Web Services, which provides a layer of security measures designed and implemented by [Amazon](https://aws.amazon.com/security/){:target="_blank"}. While Synapse is an open access site, each user has control over who may access their content by using `Sharing settings`.
 
 #### Where are my files stored?
 By default, Synapse stores files in Amazon Simple Storage Services (S3). However it is possible to set up Synapse to store files in different locations such as your local SFTP server. For files stored outside of S3, Synapse can be used to organize, manage, and access files through the use of Synapse annotations to store file-specific metadata. (see: [Custom Storage Locations](/articles/custom_storage_location.html))

@@ -13,7 +13,7 @@ Synapse `Projects` are online workspaces where researchers can collaborate and o
 
 * **Organize Your Work**: With Synapse you can organize the parts in your workflow (data, code, etc) into a hierarchy like a file system. With the tabs across the top of each project, you can easily navigate to your [Wikis](http://docs.synapse.org/articles/wikis.html), [Files and Folders](http://docs.synapse.org/articles/files_and_versioning.html), SQL-based [Tables](http://docs.synapse.org/articles/tables.html), and even conduct conversations using [Discussion Forums](http://docs.synapse.org/articles/discussion.html). 
 
-* **Store Data, Code, &amp; Results**: You can upload your data, code, and results to Synapse, or simply store a reference to where they are on your local computer system. These digital assets can be stored as Files, hosted by Synapse or in your own external cloud storage, or using [Docker Containers](http://docs.synapse.org/articles/docker.html). 
+* **Store Data, Code, &amp; Results**: You can upload your data, code, and results to Synapse, or store a reference to where they are on your local computer system. These digital assets can be stored as Files, hosted by Synapse or in your own external cloud storage, or using [Docker Containers](http://docs.synapse.org/articles/docker.html). 
 
 * **Control Access or Release Your Work Publicly**: You have complete fine-grained control over how users and groups can interact with your work. Work privately or collaborate openly, and everything in between.
 

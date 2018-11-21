@@ -1,6 +1,15 @@
+/* Fix for stick footer from https://stackoverflow.com/questions/11555931/make-footer-stick-to-bottom-of-page-using-twitter-bootstrap */
+
+html,body{
+    height: 100%
+}
+
+
+
 /* Mixins.scss
  * Snippets of reusable CSS to develop faster and keep code readable
  * ----------------------------------------------------------------- */
+
 .clearfix {
   zoom: 1; }
   .clearfix:before, .clearfix:after {
@@ -84,11 +93,9 @@ footer {
   padding: 50px; }
   .headline h1 {
     font-size: 100px;
-    line-height: 250px;
-    font-family: "Signika Negative", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    line-height: 250px; }
   .headline p {
     padding-top: 20px;
-    font-family: "Signika Negative", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-weight: 200;
     line-height: 27px; }
@@ -100,8 +107,6 @@ footer {
 .clear {
   clear: both; }
 
-code {
-  line-height: 2em; }
 
 h2 {
   line-height: 2em; }
@@ -135,12 +140,7 @@ h2 {
   padding: 20px;
   color: black; }
 
-/*.row-fluid {*/
-  /*padding-top: 55px; }*/
 
-#bootstrap-overrides .alert {
-  text-shadow: 0 0px 0;
-}
 
 /* 
 Nav-bar table of contents css
@@ -229,14 +229,21 @@ index.html sidebar
 index footer
 */
 
-#footer-index {
+#footer {
     position: absolute;
-    left: 0;
-    right: 0;
+    /* left: 0; */
+    /* right: 0; */
     width: 100%;
-    background-color: #1e7098;
+    background-color: #2B688F;
 }
 
+#footer .navbar-nav > li > a {
+  color: white;
+}
+
+#footer .navbar-nav > li > a:hover {
+  background-color: #15455F;
+}
 /* 
 change size of glyphicons on index page
 */
@@ -248,7 +255,7 @@ change size of glyphicons on index page
 .glyphicon.glyphicon-file {
     font-size: 35px;
     margin-bottom: 20px;
-    color: #1e7098
+    color: #2B688F
 }
 
 .glyphicon.glyphicon-comment {
@@ -259,7 +266,7 @@ change size of glyphicons on index page
 .glyphicon.glyphicon-book {
     font-size: 35px;
     margin-bottom: 20px;
-    color: #1e7098
+    color: #2B688F
 }
 
 .action a {
@@ -309,14 +316,14 @@ section:last-child, .section:last-child, section.last, .section.last {
   font-weight: 600;
 }
 .header a {
-  color: #1e7098;
+  color: #2B688F;
 }
 .subaction {
   color: black;
   font-size: 12px;
 }
 .action small {
-   color: #1e7098;
+   color: #2B688F;
 }
 
 #bootstrap-overrides .navbar-nav>li>a,
@@ -344,9 +351,6 @@ section:last-child, .section:last-child, section.last, .section.last {
     color: #333333;
 }
 
-/*
-sidebar navigates to topic
-*/
 
 *[id]:before {
     display: block;
@@ -361,12 +365,12 @@ sidebar navigates to topic
 }
 
 #bootstrap-overrides code {
-    padding: 2px 4px;
-    font-size: 90%;
-    color: #555555;
-    background-color: #f5f5f5;
+   /* padding: 2px 4px; */
+    font-size: 100%;
+   /* color: #555555; */
+   /* background-color: #f5f5f5; */
     border-radius: 3px;
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-family: Monaco, Consolas, "Courier New", monospace;
 }
 
 .navbar-collapse.in {
@@ -399,8 +403,7 @@ sidebar navigates to topic
 /*
 Custom css stying for google search bar
 */
-
-
+/*TODO make copy of google css, save as separate file (e.g. google_styles.css) and then override their stuff in here.*/
 /**
  * Default theme
  *
@@ -412,7 +415,6 @@ Custom css stying for google search bar
     width: auto;
     background-color: transparent;
     border: transparent;
-    float: right;
     /*min-width: 10px;*/
     /*max-width: 20%;*/
     padding: 0 0 0 0;
@@ -430,7 +432,7 @@ Custom css stying for google search bar
 .gsc-control-cse {
     background-color: transparent;
     border: transparent;
-    float: right;
+    /*float: right;*/
     /*min-width: 10px;*/
     /*max-width: 20%;*/
     padding: 20px 0 0 0;
@@ -462,7 +464,31 @@ input.gsc-input {
     background-image: none !important;
     padding: 1px 6px;
     width: 99%;
+    /*height: 25px;*/
 }
+
+input.gsc-input#gsc-i-id1 {
+    background: red;
+}
+.gsc-input-box#gsc-iw-id1 {
+    height: 25px;
+}
+    /*Since the "google custom search" text is a placeholder, overlay with it a white opaque block to hide it*/
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
+}
+/**/
 /* Search button */
 .cse input.gsc-search-button,
 input.gsc-search-button {
@@ -480,7 +506,7 @@ input.gsc-search-button {
     min-width: 0px;
     padding: 5px 12px;
     width: 40px;
-    background-image: url('/assets/images/Magnifying-glass.png') !important;
+    background-image: url('/assets/images/Magnifying-glass.png');
 }
 .cse input.gsc-search-button,
 input.gsc-search-button:hover {
@@ -743,6 +769,7 @@ body { padding-top: 50px; }
 
 .navbar-fixed-top {
     top: -50px; /* you'll have to figure out the exact number here */
+    background-color: #2B688F;
 }
 
 .navbar-fixed-top, .navbar-fixed-bottom {
@@ -950,17 +977,7 @@ li.active span.round-tabs.five{
     transition:0.1s ease-in-out;
 
 }
-/*.nav-tabs > li.active:after {*/
-    /*content: " ";*/
-    /*position: absolute;*/
-    /*left: 45%;*/
-    /*opacity:1;*/
-    /*margin: 0 auto;*/
-    /*bottom: 0px;*/
-    /*border: 10px solid transparent;*/
-    /*border-bottom-color: #ddd;*/
 
-/*}*/
 .nav-tabs > li a{
     width: 70px;
     height: 70px;
@@ -991,11 +1008,7 @@ li.active span.round-tabs.five{
     border-radius: 25px;
 }
 
-/*.btn.green{*/
-/*background-color:#7772b4;*/
-/*!*border: 2px solid #5cb85c;*!*/
-/*color: #ffffff;*/
-}
+
 
 
 
@@ -1044,4 +1057,133 @@ li.active span.round-tabs.five{
     box-shadow: none;
     -webkit-box-shadow: none;
 
+}
+
+/*Landing page styling*/
+#tagline {
+    text-align: left;
+    padding: 1em 2em 2em 8em;
+    line-height: 2em;
+    font-size: 1.25em;
+    color: #4b4b4b;
+    margin-top: -60px;
+    margin-bottom: 10px;
+}
+#title {
+    font-weight: inherit;
+    color: #1e1e1e;
+}
+#background {
+    background-image: url(/assets/images/bg-blue-geom.png);
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+}
+#gs-button {
+    float:left;
+    color: white;
+    background-color: #2B688F;
+    text-shadow: 0 0 0;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+#search-bar {
+    height: 210px;
+    background-color: #2B688F;
+    /* padding-top: 25px; */
+}
+.search-title {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0;
+}
+.search-text {
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+#landing-cse {
+    /*padding: 0 25% 0 25%;*/
+    height: 40px;
+}
+#landing-cse .gsc-input-box {
+    /*height: 25px;*/
+    border-radius: 3px;
+    box-shadow: 0 9px 14px 0 rgba(0,0,0,0.1);
+}
+#landing-cse input.gsc-search-button {
+    height: 0;
+    width: 0;
+    background-color: transparent;
+    border: transparent;
+}
+#landing-cse .gsc-search-box-tools .gsc-search-box .gsc-input {
+    /*padding-left: 20px;*/
+    font-size: 20px;
+    color: #4b4b4b;
+
+}
+#landing-cse .gsc-control-cse {
+    width: 50%;
+    display: table;
+    margin: 0 auto;
+}
+#landing-cse .gsc-control-wrapper-cse {
+    width:100%;
+}
+#landing-cse button.gsc-search-button-v2 {
+    height: 42px;
+    box-shadow: 0 9px 14px 0 rgba(0,0,0,0.1);
+}
+#gsc-i-id2 {
+    font-size: 25px;
+    text-align: center;
+    height: 1.75em !important;
+    color: #4b4b4b;
+}
+#subjects {
+    /* height: 100%; */
+    padding: 2em 7% 2em 7%;
+    background-color: #ffffff;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.subject-card {
+    text-align: center;
+    border: solid 2px #a5c5d5;
+    border-radius: 5px;
+    padding: 1em 2em 1em 2em;
+    margin-top: 5px;
+    background-color: #ffffff;
+}
+.subject-card:hover {
+    border: 2px solid #2B688F;
+    box-shadow: 0 9px 14px 0 rgba(0,0,0,0.1);
+}
+.subject-card span{
+    color: #4d4d4d;
+    font-size: 14px;
+}
+.subject-card i {
+    font-size: 2.5em;
+}
+#subjects a:hover {
+    text-decoration: none;
+}
+#subjects h5 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/*End landing page styling*/
+
+/* Match font size of ordered lists to the rest of text*/
+ol {    padding-bottom: 10px;
 }

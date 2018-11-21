@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.1.2"
+gem "jekyll", ">= 3.6.3"
 # On OS X, you may need to install
 # it manually with --with-iconv-dir:
 #

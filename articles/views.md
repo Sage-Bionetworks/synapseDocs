@@ -26,6 +26,7 @@ A view is a type of Synapse [Table](/articles/tables.html) that queries across m
 ## Create a File View
 
 To create a `File View`, select the `Project` in which you would like to create the view. The `Project` you choose does not have to contain the files you are including in your view. You will select the files of interest by defining the scope, which is the `Project(s)` and `Folders` that contain your files. 
+{% include note.html content= "The scope of a File View can have a maximum of 10,000 folders or sub-folders." %}
 
 {% tabs %}
 
@@ -95,7 +96,7 @@ See the [Using Simple Search](/articles/fileviews.html#using-simple-search) and 
 
 Views can be used to update annotations in bulk. To update other metadata in bulk, such as provenance, please see the [Bulk Processing](/articles/uploading_in_bulk.html) article.
 
-For example, if you would like to add the annotation `dogSays`:`woof` to every file in a `File View` with the synId syn456, you can do:
+For example, if you would like to update the annotation `dogSays`:`bark` to `dogSays`:`woof` in every file in a `File View` with the synId syn456, you can do:
 
 {% tabs %}
 

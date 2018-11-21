@@ -1,16 +1,17 @@
----
+﻿---
 title: Evaluation Queues
 layout: article
-excerpt: A queue accepts submission of Synapse entities for evaluation. 
+excerpt: An queue accepts submission of Synapse entities for evaluation. 
 category: howto
 ---
 
 # Evaluation Queues
-An Evaluation queue allows for people to submit Synapse Files, Docker images, etc for evaluation.  They are designed to support open-access data analysis and modeling challenges in Synapse. This framework provides tools for administrators to collect and analyze data models from Synapse users created for a specific goal or purpose.
+
+An Evaluation queue allows for people to submit Synapse Files, Docker images, etc. for evaluation.  They are designed to support open-access data analysis and modeling challenges in Synapse. This framework provides tools for administrators to collect and analyze data models from Synapse users created for a specific goal or purpose.
 
 ## Create an Evaluation Queue 
 
-To create a queue, you must first create a Synapse project. To learn how to do so, please follow instructions [here](http://docs.synapse.org/articles/getting_started.html#project-and-data-management-on-synapse). An evaluation queue can take several parameters that you can use to fine tune it to your preferences. The bare bones requirements to create a queue are:
+To create a queue, you must first create a Synapse project. To learn how to do so, please follow instructions [here](http://docs.synapse.org/articles/getting_started.html#project-and-data-management-on-synapse). An Evaluation Queue can take several parameters that you can use to fine tune it to your preferences. The minimum requirements to create a queue are:
 
    - **name** – Unique name of the evaluation
    - **description** – A short description of the evaluation
@@ -91,7 +92,7 @@ You can create Evaluation queues on the web by navigating to your challenge site
 
 ## Configure an Evaluation Queue 
 
-Submission "rounds" (start date, round duration, and number of rounds) with an optional submission quota (maximum submissions per participant or team) can be defined for each queue.  There is not a way to configure the round or quota settings of an evaluation queue from the web. The Evaluation ID can be found under the **Challenge** tab of your project. Please note that a Challenge tab will not appear on your project until you have created a challenge (**Tools->Run Challenge**). In the case below, the evaluation queue id is `9610091`.  
+An Evaluation Queue can have limits. Submission "rounds" (start date, round duration, and number of rounds) with an optional submission quota (maximum submissions per participant or team) can be defined for each queue. There is no way to configure the round or quota settings of an Evaluation Queue from the web. The Evaluation ID can be found under the **Challenge** tab of your project. Please note that a Challenge tab will not appear on your project until you have created a challenge (**Tools > Run Challenge**). In the case below, the evaluation queue id is `9610091`.  
 
 <img style="width: 80%;" src="/assets/images/evaluation_queue_id.png">
 
@@ -125,10 +126,9 @@ synStore(evaluation)
 
 {% endtabs %}
 
-
 ## Share an Evaluation Queue
 
-Each Evaluation has its own sharing settings.  The sharing levels are: "Administrator", "Can score", "Can Submit", and "Can view."  
+Each Evaluation has its own sharing settings, which limit who can interact with the Evaluation and in what way:
 - "Administrator" sharing should be tightly restricted, as it includes authority to delete the entire Evaluation queue with all its contents. These users also have the ability to download all the submissions.
 - "Can score" allows for individuals to download all the submissions
 - "Can submit" allows for Teams or individuals to submit to the Evaluation, but doesn't have access to any of the submissions.
@@ -139,10 +139,9 @@ To set the sharing setting, go to the **Challenge** tab and see your list of Eva
 
 {% include important.html content="When someone submits to an Evaluation, a copy of the submission is made, so a person with Administrator or Can score access will be able to download the submission even if the submitter deletes the entity." %}
 
-
 ## View Submissions of an Evaluation Queue
 
-All submissions of an Evaluation queue can be views through the through the use of a leaderboard.  To learn how to create a wiki page, please visit [here](http://docs.synapse.org/articles/wikis.html).  Below are instructions on how to set up a leaderboard. You must know the **evaluation Id** to do so.
+All submissions of an Evaluation queue can be views through the through the use of a leaderboard.  To learn how to create a wiki page, please visit [here](http://docs.synapse.org/articles/wikis.html).  Below are instructions on how to set up a leaderboard. You must know the **evaluation Id** to do so; see the section on how to "Configure an Evaluation Queue" for instructions on finding the evaluation Id.
 
 #### Adding Leaderboard Widget
 
@@ -150,7 +149,7 @@ All submissions of an Evaluation queue can be views through the through the use 
 
 #### Configuring Leaderboard Widget
 
-Once you click on **Leaderboard**, you will have to input your own query statement such as `select * from evaluation_9610091`.  Remember, 9610091 should be replaced with your own personal evaluation Id. To view all the columns available, click **Refresh Columns**.
+Once you click on **Leaderboard**, you will have to input your own query statement such as `select * from evaluation_9610091`.  Remember, 9610091 should be replaced with your own evaluation Id. To view all the columns available, click **Refresh Columns**.
 
 <img style="width: 80%;" src="/assets/images/configure_leaderboard_widget.png">
 
@@ -159,10 +158,6 @@ Clicking **Refresh Columns** will add these default columns.
 <img style="width: 80%;" src="/assets/images/leaderboard_columns.png">
 
 #### Saving Leaderboard Widget
-If you are happy with your leaderboard configurations, save both the configurations and the wiki page and you will see something like this. 
+If you are happy with your leaderboard configurations, save both the configurations and the wiki page to see the Leaderboard. 
 
 <img style="width: 80%;" src="/assets/images/leaderboard_on_wiki.png">
-
-
-
-

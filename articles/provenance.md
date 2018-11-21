@@ -138,10 +138,11 @@ squared_file <- synStore(squared_file)
 
 # Set provenance for newly created entity syn7209166
 act <- Activity(name = "Squared numbers", used = "syn7208917", executed = "syn7209078")
-generatedBy(data_file) <- act
+synStore(squared_file, activity=act)
+
 # Provenance can also be set using local variables instead of looking up synIds
 act <- Activity(name = "Squared numbers", used = data_file, executed = "syn7209078")
-generatedBy(squared_file) <- act
+squared_file <- synStore(squared_file, activity=act)
 
 {% endhighlight %}
 {% endtab %}
@@ -156,6 +157,43 @@ To update the provenance on a file, navigate to the `File's` tab and click on th
 {% endtabs %}
 
 <br/>
+
+### Deleting Provenance
+
+If at any point you need to delete provenance on an entity, you can do so with the Python, R, or web clients. You must be the person who created the entity to delete provenance. 
+
+{% tabs %}
+
+{% tab Command %}
+{% highlight bash %}
+Currently, deleting provenance is not supported in the command line client.
+{% endhighlight %}
+{% endtab %}
+
+{% tab Python %}
+{% highlight python %}
+# Delete provenance on entity syn123 
+delete_provenance = syn.deleteProvenance('syn123')
+{% endhighlight %}
+{% endtab %}
+
+{% tab R %}
+{% highlight r %}
+# Delete provenance on entity syn123
+deleteProvenance = synDeleteProvenance('syn123')
+{% endhighlight %}
+{% endtab %}
+
+{% tab Web %}
+Navigate to the entity you would like to delete provenance from (e.g. a File or Folder). In this example, we are deleting provenance from a file. Select **Tools->Edit File Provenance**. In the list of **Used** and **Executed**, click the **X** to delete each activity and **Save** your changes.
+
+<img id="webTab" src="/assets/images/delete_provenance.png">
+
+{% endtab %}
+
+{% endtabs %}
+
+
 
 ### Getting and Viewing Provenance
 
@@ -179,7 +217,7 @@ provenance
 
 {% tab R %}
 {% highlight r %}
-provenance <- generatedBy("syn7209166")
+provenance <- synGetProvenance("syn7209166")
 provenance
 {% endhighlight %}
 {% endtab %}
@@ -248,7 +286,7 @@ act <- Activity(name="filtering",
 finalFile <- synStore(finalFile, activity=act)
 
 # Get the activity now associated with an entity
-act <- synGetActivity(finalFile)
+act <- synGetProvenance(finalFile)
 
 # Now you can set this activity to as many files as you want (file1, file2, etc are Synapse Files)
 finalList <- c(file1, file2, file3)

@@ -3,60 +3,62 @@ title: API Documentation
 layout: default
 ---
 
-<div class="container">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+<script>
+    $(function () {
+        $('.subject-card').matchHeight();
+    });
+</script>
+
+<div class="row" id="background">
+
     <div class="row">
-        <div class="header" style="padding:150px 0 150px 0">
+        <h1 style="text-align: center">API Docs</h1>
+    </div>
+
+    <div class="row" style="padding-top:2%; padding-bottom: 11%;">
+        <div class="col-xs-12 col-md-12 col-lg-12" id="subjects" style="background-color: transparent;">
             <div class="col-xs-12 col-sm-3">
-                <div class="action">
-                    <h3>
-                        <a href="http://docs.synapse.org/python">
-                            <img src="/assets/images/python_icon.jpeg" alt="python_icon" style="width: 2.0em;"/></a>
-                        <a href="http://docs.synapse.org/python">
-                            <br><br>Python Docs
-                            <h6><span class="subaction">Interact with Synapse using the Python Synapse client.</span></h6>
-                        </a>
-                    </h3>
-                </div>
+                <a href="https://python-docs.synapse.org/">
+                    <div class="subject-card">
+                        <img src="/assets/images/python_icon.jpeg" alt="python_icon" style="width: 2.0em;"/>
+                        <h5>Python Docs</h5>
+                        <hr>
+                        <span>Interact with Synapse using the Python Synapse client.</span>
+                    </div>
+                </a>
             </div>
             <div class="col-xs-12 col-sm-3">
-                <div class="action">
-                    <h3>
-                        <a href="http://docs.synapse.org/r">
-                            <img src="/assets/images/rstudio_icon.jpeg" alt="rstudio_icon" style="width: 2.0em;"/></a>
-                        <a href="http://docs.synapse.org/r">
-                            <br><br>R Docs
-                            <h6><span class="subaction">Use the R client to interact with Synapse from scripts or interactive R sessions.</span></h6>
-                        </a>
-                    </h3>
-                </div>
+                <a href="https://r-docs.synapse.org/">
+                    <div class="subject-card">
+                        <img src="/assets/images/rstudio_icon.jpeg" alt="R_icon" style="width: 2.0em;"/>
+                        <h5>R Docs</h5>
+                        <hr>
+                        <span>Use the R client to interact with Synapse from scripts or interactive R sessions.</span>
+                    </div>
+                </a>
             </div>
             <div class="col-xs-12 col-sm-3">
-                <div class="action">
-                    <h3>
-                        <a href="http://docs.synapse.org/python/CommandLineClient.html">
-                            <img src="/assets/images/bash_icon.png" alt="bash_icon" style="width: 2.5em;"/></a>
-                        <a href="http://docs.synapse.org/python/CommandLineClient.html">
-                            <br><br> Command Line
-                          <h6><span class="subaction">Connect and interact with Synpase directly using the Synapse command line client.</span></h6>
-                        </a>
-                    </h3>
-                </div>
+                <a href="https://python-docs.synapse.org/build/html/CommandLineClient.html">
+                    <div class="subject-card">
+                        <img src="/assets/images/bash_icon.png" alt="bash_icon" style="width: 2.5em;"/>
+                        <h5>Command Line Docs</h5>
+                        <hr>
+                        <span>Connect and interact with Synapse directly using the Synapse command line client.</span>
+                    </div>
+                </a>
             </div>
             <div class="col-xs-12 col-sm-3">
-                <div class="action">
-                    <h3>
-                        <a href="http://docs.synapse.org/rest">
-                            <img src="/assets/images/api_gears.png" alt="gears_icon" style="width: 2.0em;"/></a>
-                        <a href="http://docs.synapse.org/rest">
-                            <br><br>REST API
-                          <h6><span class="subaction">Build your own client using the Synapse REST APIs.</span></h6>
-                        </a>
-                    </h3>
-                </div>
+                <a href="http://docs.synapse.org/rest">
+                    <div class="subject-card">
+                        <img src="/assets/images/api_gears.png" alt="gears_icon" style="width: 2.0em;"/>
+                        <h5>REST API</h5>
+                        <hr>
+                        <span>Build your own client using the Synapse REST APIs.</span>
+                    </div>
+                </a>
             </div>
+
         </div>
     </div>
 </div>
-
-
-

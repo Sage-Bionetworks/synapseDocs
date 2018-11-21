@@ -11,6 +11,8 @@ Synapse Docs is generated using [Jekyll](https://jekyllrb.com/) and uses redcarp
 
 Internal development can be performed by branching from `develop` to your own feature branch, making changes, pushing the branch to this repository, and opening a pull request. Pull requests against the master branch require a review before merging.
 
+Note: even if the build succeeds, it can take 15-30 minutes for content in `master` to be reflected on the live site. Don't panic. :) 
+
 ### Creating a page
 
 To create a page using the article layout, start by specifying at the very beginning the title, layout, excerpt, and category in the YAML front matter. The title and excerpt will show up in the article's user guide thumbnail and the category tag will be used to sort the article into its corresponding user guide tab. If no category is specified, it will default into the "How-To" tab. 
@@ -124,7 +126,7 @@ Connection refused error:
                     Connection refused - connect(2)
 jekyll 3.1.2 | Error:  Connection refused - connect(2)
 ```
-When you get this error, simply run this command several times before regenerating again.
+When you get this error, run this command several times before regenerating again.
 ```
 ulimit -n 10000
 ```

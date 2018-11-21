@@ -1,0 +1,30 @@
+---
+title: Synapse in Practice
+layout: default
+---
+<div class="container">
+<div class="row">
+    <h1 style="text-align: center">Synapse In Practice</h1>
+    <hr>
+    {% assign sorted_pages = site.pages | sort:"order" %}
+    {% for page in sorted_pages %}
+    {% if page.category == 'inpractice' %}
+    <div class="col-xs-12 col-sm-6 col-md-6">
+        <div class="thumbnail"
+             style="border-left: 5px solid #B1C6FA;
+                                     border-right: 1px solid #B1C6FA; border-bottom: 1px solid #B1C6FA;">
+            <div class="card-header" style="height: 15px; background-color: #3F5EAB">
+            </div>
+            <div class="caption">
+                <h5><b>{{ page.title }}</b></h5>
+                <p>{{page.excerpt}}</p>
+                <a href="{{ page.url }}.html" class="btn btn-default btn-sm" role="button">Go to this article</a>
+            </div>
+
+        </div>
+    </div>
+
+    {% endif %}
+    {% endfor %}
+</div>
+</div>
