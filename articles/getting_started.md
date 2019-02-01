@@ -72,7 +72,7 @@ To add a `Wiki` to a `Folder` or `File`, click on the `Files` tab and navigate t
 
 ## Local Folder and File Sharing Settings
 
-By default, access to `Folders` and `Files` is controlled by the **sharing settings** that the project has. You may also set individual sharing settings for specific `Folders` nd `Files` within a `Project`.
+By default, access to `Folders` and `Files` is controlled by the **sharing settings** that the project has. You may also set individual sharing settings for specific `Folders` and `Files` within a `Project`.
 
 To share a `Project` with specific people or make it public, click on the **Project Settings** menu and select **Project Sharing Settings**. For more details, read the [How to Share Projects](/articles/access_controls.html#how-to-share-projects) section of the Sharing Settings and Conditions for Use instructions.
 
