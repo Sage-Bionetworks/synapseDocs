@@ -65,8 +65,8 @@ For **read-write** permissions, you also need to create an object that proves to
 
 {% tab AWScli %}
 {% highlight bash %}
-# copy your owner.txt file to your s3 bucket
-aws s3 cp owner.txt s3://nameofmybucket/nameofmyfolder
+# copy your owner.txt file to your s3 bucket with permission for synapse to read the file
+aws s3 cp owner.txt s3://nameofmybucket/nameofmyfolder --acl authenticated-read
 {% endhighlight %}
 {% endtab %}
 
