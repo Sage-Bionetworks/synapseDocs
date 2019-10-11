@@ -19,7 +19,7 @@ The [Views](views.md) page provides steps to list `Files` and `Folders` within `
 
 A `Project` can contain multiple studies, various assays and extensive `Files`, obscuring relevant data under a large file hierarchy. For this use case, an individual assay type is meant to be accessible from the `Wiki`, as the assay-relevant data is a subset of a broader study. The objective of highlighting .fastq and .bam rnaSeq files in an embedded `Table` is to provide an analyst a clear path to access files for reproducible studies.
 
-This study contains rnaSeq and SNP genomic data, as depicted in the fileview scope below. The scope can be further restricted to rnaSeq-specific data with [additional queries](https://docs.synapse.org/rest/org/sagebionetworks/repo/web/controller/TableExamples.html) on the embedded `Table`.
+This study contains rnaSeq and SNP genomic data, as depicted in the fileview scope below. The scope can be further restricted to rnaSeq-specific data with [additional queries](https://api-docs.synapse.org/rest/org/sagebionetworks/repo/web/controller/TableExamples.html) on the embedded `Table`.
 
 <img id="image" src="../assets/images/inPractice_studyContainer.png">
 

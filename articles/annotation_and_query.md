@@ -125,7 +125,7 @@ SELECT * FROM syn123456 WHERE "RIN"<=6.1
 
 Along with annotations added by users, every entity has a number of fields useful for searching. For a complete list, see:
 
-<a href="https://docs.synapse.org/rest/org/sagebionetworks/repo/web/controller/TableExamples.html" target="_blank" class="btn btn-info btn-lg active" role="button" aria-pressed="true">SQL Query Examples</a>
+<a href="https://api-docs.synapse.org/rest/org/sagebionetworks/repo/web/controller/TableExamples.html" target="_blank" class="btn btn-info btn-lg active" role="button" aria-pressed="true">SQL Query Examples</a>
 
 ### Finding Files in a Specific Project
 

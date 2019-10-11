@@ -41,7 +41,7 @@ After clicking on "Next", you will see the option to rename your Table and, opti
 
 Synapse `Tables` require that you specify the types of data in each column included in the `Table`. If you are creating an empty Table, these columns can be specified manually by clicking on **Add Column** and selecting the column type you wish to add. If you are uploading an existing file, Synapse will recommend column types during upload. If you allow Synapse to recommend column types, be sure to verify that these column types represent your data well. You will be presented with a best guess under the button labeled "Schema Options" during import.
 
-Synapse currently supports several kinds of text columns (STRING, LARGE TEXT), dates (as TIMESTAMP), and a variety of numeric columns (INTEGER, DOUBLE), and various Synapse identifiers (ENTITYID, USER). For a complete list of column types and definitions, please see the [REST docs on columnTypes](https://docs.synapse.org/rest/org/sagebionetworks/repo/model/table/ColumnType.html).
+Synapse currently supports several kinds of text columns (STRING, LARGE TEXT), dates (as TIMESTAMP), and a variety of numeric columns (INTEGER, DOUBLE), and various Synapse identifiers (ENTITYID, USER). For a complete list of column types and definitions, please see the [REST docs on columnTypes](https://api-docs.synapse.org/rest/org/sagebionetworks/repo/model/table/ColumnType.html).
 
 <img id="image" src="../assets/images/tableSchema.png">
 
@@ -108,7 +108,7 @@ To delete the entire Table, click on **Tools** and then select **Delete Table** 
 
 # Querying Table Data
 
-The data contained within a Synapse `Table` can be retrieved by using a SQL-like query language either through the web portal or through the analytical clients. **See the [API docs](http://docs.synapse.org/rest/org/sagebionetworks/repo/web/controller/TableExamples.html) for an enumeration of the types of queries that can be performed.**
+The data contained within a Synapse `Table` can be retrieved by using a SQL-like query language either through the web portal or through the analytical clients. **See the [API docs](http://api-docs.synapse.org/rest/org/sagebionetworks/repo/web/controller/TableExamples.html) for an enumeration of the types of queries that can be performed.**
 
 ## Selecting and Filtering Data
 
@@ -138,7 +138,7 @@ SELECT * FROM syn3079449 WHERE age > 50 ORDER BY "treatmentArm" ASC
 
 ## Using Advanced SQL Queries to Aggregate Data
 
-More advanced SQL functions are also supported, such as COUNT, SELECT AS, and GROUP_CONCAT statements. Please **see the [API docs](http://docs.synapse.org/rest/org/sagebionetworks/repo/web/controller/TableExamples.html) for an enumeration of the types of queries that can be performed.**
+More advanced SQL functions are also supported, such as COUNT, SELECT AS, and GROUP_CONCAT statements. Please **see the [API docs](http://api-docs.synapse.org/rest/org/sagebionetworks/repo/web/controller/TableExamples.html) for an enumeration of the types of queries that can be performed.**
 
 To count the number of rows:
 
