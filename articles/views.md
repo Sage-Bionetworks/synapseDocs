@@ -5,8 +5,6 @@ excerpt: Use project and file views to query across multiple projects and folder
 category: howto
 ---
 
-# Overview
-
 A view is a type of Synapse [Table](tables.md) that queries across metadata ([Annotations](annotation_and_query.md)) for particular items (currently: projects or files) with a particular "scope". A `File View` lists all `Files` or `Tables` within one or more `Folders` or `Projects`. A `Project View` lists all `Projects` you've added to the view. Views can:
 
 * Allow `Projects`, `Files`, and `Tables` to be easily searched and queried
@@ -19,8 +17,6 @@ A view is a type of Synapse [Table](tables.md) that queries across metadata ([An
 To create a `File View`, select the `Project` in which you would like to create the view. The `Project` you choose does not have to contain the files you are including in your view. You will select the files of interest by defining the scope, which is the `Project(s)` and `Folders` that contain your files. "File Views" can also contain `Tables` or `Folders`; you can choose which kinds of items you would like to include during this process.
 
 {% include note.html content= "The scope of a File View can have a maximum of 10,000 folders or sub-folders." %}
-
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/qWjVlw2_n2w?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Instructions for creating `Views` using the clients can be found in the [Python docs](https://python-docs.synapse.org/build/html/Views.html) and in the [R docs](https://r-docs.synapse.org/articles/views.html).
 

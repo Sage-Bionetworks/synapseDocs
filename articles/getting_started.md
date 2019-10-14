@@ -6,8 +6,6 @@ category: intro
 order: 1
 ---
 
-# Get Started with Synapse
-
 This guide is for new users who are interested in learning about Synapse. You will learn fundamental Synapse features by performing some common tasks:
 
 * Create your own project and add content to Synapse

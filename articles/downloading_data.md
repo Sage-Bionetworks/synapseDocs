@@ -6,8 +6,6 @@ category: intro
 order: 3
 ---
 
-# Overview
-
 Data in Synapse can be downloaded using the programmatic clients (Python, R, and command line) as well as the web client.
 
 ## Downloading a File

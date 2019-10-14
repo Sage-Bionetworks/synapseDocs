@@ -6,8 +6,6 @@ category: apiclient
 order: 2
 ---
 
-# Client Configuration
-
 ## For Users
 
 Store login credentials from the current `login()` using the `rememberMe = TRUE` parameter. You should use the `rememberMe` feature on a personal computer of which you are the only Synapse user.

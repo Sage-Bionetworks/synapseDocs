@@ -6,8 +6,6 @@ category: intro
 order: 4
 ---
 
-# General
-
 #### What is Synapse?
 
 Synapse is a collaborative informatics platform dedicated to supporting large-scale pooling of data, knowledge, and expertise across institutional boundaries to solve research problems.  Synapse helps scientists solve a series of problems:
@@ -86,7 +84,7 @@ You can browse public content in Synapse without registering. However, without a
 
 #### What is a validated profile?
 
-Validating your profile is a process where your identity is established through a combination of your profile information, your [ORCID](http://orcid.org/), a signed oath, and an external credential. Validation increases transparency between researchers and data donors. A validated profile is needed for access to specific datasets, and is currently required for access to data collected through Sage Bionetworks’ [research apps](http://sagebase.org/mobile-health/overview/ ). Profile validation instructions can be found on your profile page. Click on the ‘Request Profile Validation’ link to see the required steps.
+Validating your profile is a process where your identity is established through a combination of your profile information, your [ORCID](http://orcid.org/), a signed oath, and an external credential. Validation increases transparency between researchers and data donors. A validated profile is needed for access to specific datasets, and is currently required for access to data collected through Sage Bionetworks’ [research apps](http://sagebase.org/mobile-health/overview/). Profile validation instructions can be found on your profile page. Click on the ‘Request Profile Validation’ link to see the required steps.
 
 # Adding Content
 

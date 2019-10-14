@@ -5,8 +5,6 @@ excerpt: Embedding Synapse Forms to Collect Data into Tables
 category: howto
 ---
 
-# Forms
-
 `Forms` are a way to collect data _into_ a Synapse `Table`. Forms are currently available only under the _alpha_ configuration as they are not yet ready for full release; please use Forms only with this caveat in mind. This document will evolve as additional functionality is added.
 
 With Forms, you can:

@@ -6,8 +6,6 @@ excerpt: An queue accepts submission of Synapse entities for evaluation.
 category: howto
 ---
 
-# Evaluation Queues
-
 An Evaluation queue allows for people to submit Synapse Files, Docker images, etc. for evaluation.  They are designed to support open-access data analysis and modeling challenges in Synapse. This framework provides tools for administrators to collect and analyze data models from Synapse users created for a specific goal or purpose.
 
 ## Create an Evaluation Queue

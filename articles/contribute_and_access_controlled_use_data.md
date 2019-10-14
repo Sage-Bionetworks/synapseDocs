@@ -8,8 +8,6 @@ order: 4
 
 <a name="contributing-data"></a>
 
-# Contributing Data
-
 Data shared in Synapse may have `Conditions for Use` that define restrictions on how it may be disclosed or what the data set may contain based on privacy laws or regulation.
 
 You must be a `Certified User` to contribute data to Synapse. You are responsible for determining if the data you would like to contribute is `Controlled Use` and therefore requires `Conditions for Use`. Carefully consider the specific risks and appropriate protections required before sharing your data.

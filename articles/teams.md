@@ -11,8 +11,6 @@ category: howto
 }
 </style>
 
-# Teams
-
 `Teams` are a way to easily manage groups of users for the purposes of project access, communication, and challenge participation. In this guide you will learn how to:
 
 * Create and manage a team

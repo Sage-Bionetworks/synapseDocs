@@ -6,8 +6,6 @@ category: apiclient
 order: 1
 ---
 
-# Introduction
-
 The API clients provide a way to use Synapse programmatically. This page shows you how to install and login to get you started. Packages to interface and access data within Synapse are available for:
 
 * Command Line

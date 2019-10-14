@@ -5,8 +5,6 @@ excerpt: Learn how to set-up the wireframe of a challenge.
 category: howto
 ---
 
-## Challenge Guide Overview
-
 This guide is meant to help organizers create a **challenge space** within Synapse to host a crowd-sourced challenge. A challenge space provides participants with a `Project` to learn about the challenge, join the challenge community, submit entries, track progress and view results.  This document will focus on:
 
 * Creating the challenge space

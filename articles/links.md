@@ -17,8 +17,6 @@ category: howto
 }
 </style>
 
-# Links
-
 Synapse `Links` provide users the ability to create a link to any File, Table, Folder, or Project on Synapse. 
 
 ## Creating a Link

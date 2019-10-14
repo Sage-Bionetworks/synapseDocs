@@ -5,7 +5,7 @@ excerpt: How to Configure the Genome Browser Widget
 category: howto
 ---
 
-# Biodalliance Setup
+## Biodalliance Setup
 
 * Species = Supports human (hg19/Gr37) and mouse (mm10/Grch38) genomes
 * chr = Chromosome number 

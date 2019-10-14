@@ -5,8 +5,6 @@ excerpt: Learn about using custom metadata, how to assign and modify annotations
 category: howto
 ---
 
-# Annotations
-
 Annotations are key-value pairs stored as metadata for `Projects`, `Files`, `Folders`, and `Tables` that help users to find and query data. Annotations can be based on an existing ontology or controlled vocabulary, or can be created in an *ad hoc* manner and modified later as the metadata evolves. Annotations can be a powerful tool used to systematically group and/or describe things (files or data, etc.) in Synapse, which then provides a way for those things to be searched for and discovered.
 
  For example, if you have uploaded a collection of alignment files in the BAM file format from an RNA-sequencing experiment, each representing a sample and experimental replicate, you can use annotations to add this information to each file in a structured way. Sometimes, users encode this information in file names, e.g., `sampleA_conditionB.bam`, which makes it "human-readable" but makes it difficult to search for in a systematic way, such as finding all replicates of `sampleA_conditionB`. Adding this information as Synapse annotations enables a more complete description of the contents of the `File`.

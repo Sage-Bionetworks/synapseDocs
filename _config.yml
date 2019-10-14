@@ -2,3 +2,10 @@ encoding: utf-8
 
 theme: jekyll-theme-minimal
 highlighter: rouge
+toc:
+  min_level: 2
+  max_level: 4
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+ 

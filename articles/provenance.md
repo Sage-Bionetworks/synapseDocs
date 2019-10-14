@@ -15,8 +15,6 @@ category: howto
 }
 </style>
 
-# Provenance
-
 <img id="image" style="float:right" src="../assets/images/provenanceWorkflowDemo.png">
 
 Reproducible research is a fundamental responsibility of scientists, but the best practices for achieving it are not established in computational biology. The Synapse “Provenance” system is one of many solutions you can use to make your work reproducible by you and others.

@@ -8,8 +8,6 @@ order: 3
 
 <a name="synapse-user-credentials"></a>
 
-# About Accounts, Certification and Profile Validation
-
 There are three levels of users in Synapse: `Anonymous`, `Registered`, and `Certified`.
 The table below summarizes the user privileges for each level.  
 
@@ -29,6 +27,7 @@ The table below summarizes the user privileges for each level.
 ## User Responsibilities
 
 You are solely responsible for your actions on Synapse. You are required to abide by the [Synapse Terms and Conditions of Use](https://s3.amazonaws.com/static.synapse.org/governance/SageBionetworksSynapseTermsandConditionsofUse.pdf?v=4) and all policies and principles described in the [Synapse governance documents](governance.md). We strongly encourage you to familiarize yourself with these documents. Please contact the Synapse Access and Compliance Team (<mailto:act@synapse.org>) if you have any questions.
+
 {% include important.html content="By using Synapse you consent to all Synapse governance policies and procedures." %}
 
 ## About Creating, Updating, and Deleting Synapse Accounts
@@ -66,7 +65,7 @@ A validated profile is one where your identity is established through a combinat
 
 ### Get Your Profile Validated  
 
-Go to the settings area of your [Synapse profile homepage](https://www.synapse.org/#!Profile:v/settings){:target="_blank"} (click your name/picture on upper banner of the screen, then select Settings to get there) and use the links in the Profile Validation box:
+Go to the settings area of your [Synapse profile homepage](https://www.synapse.org/#!Profile:v/settings) (click your name/picture on upper banner of the screen, then select Settings to get there) and use the links in the Profile Validation box:
 
 1. Confirm your user profile is complete including **your full name, current affiliation, and city/country.**
 1. Link to your ORCID profile. **Make sure your profile is public and populate it with at least one piece of information about yourself in addition to your name.**

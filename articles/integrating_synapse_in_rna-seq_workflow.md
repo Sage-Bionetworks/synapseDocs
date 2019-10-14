@@ -5,7 +5,7 @@ category: inpractice
 excerpt: Using Synapse in an RNA-Seq workflow to manage files and track processing steps.  
 ---
 
-# Goals
+## Goals
 
 The goal is to demonstrate how to use Synapse in an RNA-Seq workflow to manage files and track processing steps.
 

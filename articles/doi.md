@@ -22,8 +22,6 @@ category: howto
 }
 </style>
 
-# Overview
-
 A Digital Object Identifier (DOI) is a persistent identifier assigned to uniquely identify a digital object. A DOI is defined by a digital location like a URL and a description of the object. This description includes attribution and a creation or publication date. Creating and assigning a new DOI is commonly known as "minting". Minting a DOI for things in Synapse allow you to reference them when used elsewhere, such as in a publication or on an external website.
 
 DOIs are available in Synapse for Projects, Files, Folders, and Tables. DOIs that are for objects stored in Synapse have a prefix of `doi:10.7303`. They are then followed by the Synapse ID of the object being linked to, such as `syn2580853`, which is a Synapse project. The DOI `doi:10.7303/syn2580853` can be represented as a URL, [https://doi.org/10.7303/syn2580853](https://doi.org/10.7303/syn2580853), which automatically redirects to the associated Synapse Project, the [AMP-AD Knowledge Portal](https://www.synapse.org/#!Synapse:syn2580853).

@@ -6,8 +6,6 @@ category: governance
 order: 1
 ---
 
-# Governance Overview
-
 Synapse operates under comprehensive governance policies. These policies delineate Synapse users’ rights and responsibilities. They also specify the rights and responsibilities of Sage Bionetworks and of the Synapse Access and Compliance Team (ACT).
 
 ## Terms and Conditions of Use

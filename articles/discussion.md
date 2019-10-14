@@ -1,5 +1,5 @@
 ---
-title: Discussion
+title: Discussion Forums
 layout: article
 excerpt: Explore the features of the discussion forum and how to use it to help your collaborations.
 category: howto
@@ -10,8 +10,6 @@ category: howto
     width: 50%;
 }
 </style>
-
-# Discussion Forums
 
 `Discussion` forums are a way to easily communicate with others, similar to a message board, which is visible to all those with whom a project is shared. In this guide you will learn how to:
 
@@ -24,15 +22,15 @@ category: howto
 
 The `Discussion` tab can be found in the project navigation tabs on your project's main page. Anyone with `Project` access may view discussion threads contained in the project, create new threads, or reply to existing threads.
 
-<img style="width: 65%;" src="/assets/images/Discussion Main.png">
+<img style="width: 65%;" src="../assets/images/Discussion Main.png">
 
 To create a new thread, click the `New Thread` button at the top of the `Discussion` tab.
 
-<img style="width: 50%" src="/assets/images/NewThread_Dialog.png">
+<img style="width: 50%" src="../assets/images/NewThread_Dialog.png">
 
 This opens a **New Thread** dialog box in which you can edit text, insert pictures, code, TeX, Widgets, or Markdown script. As with `Wiki` editing, a Formatting Guide is available to show you what formatting features are available.
 
-<img style="width: 50%" src="/assets/images/FormattingGuide.png">
+<img style="width: 50%" src="../assets/images/FormattingGuide.png">
 
 {% include tip.html content="You may tag people by including an '@' symbol followed by their username; tagging users in discussion threads will send them a notification of the thread, so it can be used to invite others into the discussion." %}
 
@@ -48,7 +46,7 @@ You may subscribe to a `Discussion` forum for a particular `Project` by clicking
 
 Additionally, you may change notification settings on an individual thread by using the **eye** icon which is visible from within the thread, or by selecting "Follow Thread" or "Unfollow Thread" from the Tools menu. This can be used to stop receiving reply notifications for that individual thread when you've followed all activity in a discussion forum, or to follow activity in only a select thread.
 
-<img style="width: 65%;" src="/assets/images/UnfollowThread.png">
+<img style="width: 65%;" src="../assets/images/UnfollowThread.png">
 
 # Moderating a Discussion Forum
 
@@ -62,7 +60,7 @@ In case of accidental deletion, moderators may also undelete threads to restore 
 
 Moderators may also "pin" important threads using the **pin** icon located next to the original post within the thread page. This causes the thread to be highlighted on the top of the thread list on the `Discussion` main page, and to remain at the top of the list even once newer threads are posted. Moderators may also "unpin" threads.
 
-<img style="width: 65%;" src="/assets/images/ModeratorButtons.png">
+<img style="width: 65%;" src="../assets/images/ModeratorButtons.png">
 
 # See Also 
 

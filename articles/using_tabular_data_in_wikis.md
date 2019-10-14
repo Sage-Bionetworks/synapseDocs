@@ -5,7 +5,7 @@ excerpt: Use Tables in wikis to augment team communication in projects.
 category: inpractice
 ---
 
-# Use a Wiki Table Widget to Feature a Data Subset
+## Use a Wiki Table Widget to Feature a Data Subset
 
 `Wiki` widgets are tools to support narrative content. Embedded `Wiki` `Tables` can enable quick access to `Files` of highest importance and orient users to the resources contained in a collaborative project. `Wiki` `Tables` accept queries of existing `Tables` or `File Views`, providing a strategy to restrict scope and focus content.
 

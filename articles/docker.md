@@ -1,11 +1,9 @@
 ---
-title: Docker Registry
+title: Synapse Docker Registry
 layout: article
 excerpt: The Synapse Docker registry provides a space for Synapse users to store and distribute their Docker images per Synapse project.
 category: howto
 ---
-
-# Synapse Docker Registry
 
 Docker is a tool for creating, running, and managing lightweight virtual machines. These virtual machines make it possible to distribute executable environments with all of the dependencies that can easily be run by others. These Docker images can then be stored and distributed on a Docker registry, a collection of these images. There are a number of open registries on the web, and Synapse hosts a private registry, freely available to our users, which will allow users to create software on a per project basis which can be easily shared across Synapse. Learn more about [Docker](https://www.docker.com/products/overview) and [Docker registry](https://www.docker.com/products/docker-registry).
 

@@ -17,8 +17,6 @@ category: howto
 }
 </style>
 
-# Files
-
 Synapse `Files` can be created by uploading or linking to digital files on the web. They are accessible to anyone who has [access](access_controls.md), can be annotated with custom metadata, can be embedded into Synapse `Wiki` pages, and can be associated with a [DOI](doi.md). `Files` carry the Conditions for Use of the Synapse `Folder` they are placed in, plus any additional specific Conditions for Use they have on their own.
 
 By default, `Files` uploaded to Synapse are stored in 'Synapse Storage', which is freely available to you. `Files` can also be stored on your own Amazon S3 bucket (see [Custom Storage Locations](custom_storage_location.md)) or other custom locations. Furthermore, if you don't want to upload a file (it has external restrictions on sharing, is really large, for example) you can also link to the file. In this way, the file will be accessible through the Synapse clients when you are on the computer that the file is stored, but can be annotated, queried, and documented with a Wiki through Synapse. Lastly, you can provide web-accessible links as Synapse files, which will redirect to that location. All of the same Synapse `File` features are available are available on external links as well.
@@ -131,7 +129,7 @@ entity = syn.delete("syn56789")
 entity <- synDelete("syn56789")
 ```
 
-# Versions of Files
+## Versions of Files
 
 Versioning is an important component to reusable, reproducible research. When a Synapse `File` is initially uploaded, it automatically gets a version of `1`. It can be referred to explicitly by its Synapse ID: `syn12345678.1`. Uploading a new version of a file replaces the existing file in Synapse while preserving the previous version. The Synapse ID will remain but the version will increase, e.g., `syn12345678.2`. All versions are accessible through a single entry point (the Synapse ID, `syn12345678`). It is important to note that, by default, any previous versions of the file should still be available - they may be used in provenance relationships or as part of a data release. 
 

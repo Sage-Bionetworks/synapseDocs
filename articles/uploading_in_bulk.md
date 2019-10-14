@@ -5,8 +5,6 @@ excerpt: Learn about bulk processes with files, annotations and provenance.
 category: howto
 ---
 
-# Uploading and Downloading Data in Bulk
-
 Working with a large number of files on the web can be tedious, especially if you want to download, upload, or set [annotations](annotation_and_query.md) and [provenance](provenance.md). The command line, Python client and R client have convenience functions for bulk upload and download. Uploading require a tab delimited *manifest* where each file to be uploaded and, optionally, annotations to be applied, are specified as a row in the file. Downloading in bulk requires identifying a container (`Folder`, `Project`, `Table`, or `View`) that contains the files of interest. In this article we will cover how to:
 
 * create a manifest

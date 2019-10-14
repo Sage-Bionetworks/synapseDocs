@@ -14,8 +14,6 @@ category: howto
 }
 </style>
 
-## Overview
-
 This tutorial will teach you the steps of participating in a challenge.
 
 ## Challenge Registration

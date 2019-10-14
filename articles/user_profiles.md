@@ -1,11 +1,9 @@
 ---
-title: "User Profiles"
+title: "User Accounts"
 layout: article
 excerpt: Create your user account and manage your profile  
 category: howto
 ---
-
-# User Accounts
 
 Anyone can browse public content on the Synapse web site, but in order to download and create content you will need to register for an account using an email address. You will receive an email message for verification to complete the registration process.
 

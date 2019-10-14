@@ -5,8 +5,6 @@ excerpt: Organize wiki pages into a sensible hierarchy
 category: howto
 ---
 
-# Overview
-
 `Wikis` provide a space to write narrative content to describe a project or content within the project. They are available in Synapse on `Projects`, `Folders`, and `Files`. Sometimes, as wikis evolve, the page order needs to be modified to better suit the overall project strucutre. This article details how to do this.
 
 ## Modify Page Order for Existing Pages

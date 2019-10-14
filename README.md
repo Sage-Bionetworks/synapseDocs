@@ -5,13 +5,20 @@
 This is a documentation site for [Synapse](https://www.synapse.org). Synapse is an open source software platform that data
 scientists use to carry out, track, and communicate their research in real time.
 
-## How to contribute
+## Contributing Guide
 
-Synapse Docs is generated using [Jekyll](https://jekyllrb.com/) and uses redcarpet to render Markdown. Various page layouts can be found under the \_layouts folder in the home directory. Most everything can be written using standard [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+- Assign GitHub issue to yourself to track work in progress and prevent duplicate efforts. If you don't know what you should work on, look for things tagged with `help-wanted` or `good-first-issue`.
+- Create a [feature branch](https://guides.github.com/introduction/flow/) from the `gh-pages` branch to make your changes or new contribution.
+- Using a Markdown editor lke Typora, VS Code, or Sublime Text will allow you to visualize how your Markdown looks locally. You can also make your changes directly in the GitHub website or any other text editor.
+- Open a [pull request](https://help.github.com/en/articles/about-pull-requests) against the `gh-pages` branch and [request a review](https://help.github.com/en/articles/requesting-a-pull-request-review).
+- Merge requires approving review by a repository administrator.
 
-Internal development can be performed by branching from `develop` to your own feature branch, making changes, pushing the branch to this repository, and opening a pull request. Pull requests against the master branch require a review before merging.
+Synapse Docs is generated using [Github Pages](https://pages.github.com/). Follow the standard [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) guide.
 
-Note: even if the build succeeds, it can take 15-30 minutes for content in `master` to be reflected on the live site. Don't panic. :) 
+To build locally, follow the instructions found [here](https://help.github.com/en/articles/testing-your-github-pages-site-locally-with-jekyll). You will need Jekyll, Ruby, and the Ruby package manager, Bundler.
+
+
+Internal development can be performed by branching from `gh-pages` to your own feature branch, making changes, pushing the branch to this repository, and opening a pull request. Pull requests against the `gh-pages` branch require a review before merging.
 
 ### Creating a page
 
@@ -31,40 +38,12 @@ category: intro
 ---
 ```
 
-### Content
-Article content should begin with a short summary describing what the page is about. Each header on the page will be rendered on the sidebar menu as well for easier navigation.
+### Style Guide 
 
-### Code blocks with multiple languages
-
-You can use Liquid tags to show a code example in multiple languages. Follow the format below for as many languages as you'd like, ensuring that the languages are in alphabetical order.
-```
-{% tabs %}
-
-  {% tab Command %}
-    {% highlight bash %}
-    some code here
-    {% endhighlight %}
-  {% endtab %}
-
-
-  {% tab Python %}
-    {% highlight python %}
-    more code here
-    {% endhighlight %}
-  {% endtab %}
-
-  {% tab R %}
-    {% highlight r %}
-    add code here
-    {% endhighlight %}
-  {% endtab %}
-
-  {% tab Web %}
-    Instructions for Web + screenshots
-  {% endtab %}
-
-{% endtabs %}
-```
+- Page header matches the page name as stated in the [index](http://sage-bionetworks.github.io/synapseDocs/articles/) (e.g. not "Overview").
+  - Article content should begin with a short summary describing what the page is about.
+- Synapse entity types or features are only emphasized in the top-most Overview section on each page. e.g. `File` , `Project` 
+  - In all subsequent sections, these entity types or features are referred to as proper nouns and capitalized. e.g. File, Project
 
 ### Using alert tags
 
@@ -98,42 +77,6 @@ Images can be inserted using either Markdown or HTML, it all depends on your pre
 <img src="/assets/images/image1.jpg" alt="alt text">
 ```
 
-## Install Dependencies
-To install bundler (mac, install brew first):
-
-    brew install ruby npm
-    gem install bundler
-
-With Bundler:
-
-    bundle install
-    npm install
-
-### How to run a development server
-
-    bundle exec jekyll serve
-
-then navigate to [localhost:4000](http://localhost:4000)
-
-### How to regenerate the site
-
-    ./bin/jekyll build
-
-**Solving common bugs while regenerating**
-Connection refused error:
-```
-            Source: .
-       Destination: ./_site
- Incremental build: disabled. Enable with --incremental
-      Generating... 
-  Conversion error: Jekyll::BrowserifyConverter encountered an error while converting '/js/all.js':
-                    Connection refused - connect(2)
-jekyll 3.1.2 | Error:  Connection refused - connect(2)
-```
-When you get this error, run this command several times before regenerating again.
-```
-ulimit -n 10000
-```
 ## License
 
 Distributed under the Eclipse Public License, the same as Clojure.
