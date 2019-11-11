@@ -111,6 +111,12 @@ synStore(foo)
 
 ## Deleting a File
 
+##### Web
+
+Navigate to the file you would like to move. Select **File Tools** -> **Delete File** and confirm the deletion.
+
+<img id="smallImage" src="/assets/images/delete_file_web.png">
+
 ##### Command line
 
 ```bash
