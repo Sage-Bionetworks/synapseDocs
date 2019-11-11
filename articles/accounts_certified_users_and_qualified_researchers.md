@@ -4,7 +4,7 @@ layout: default
 ---
 
 <head>
-    <meta http-equiv="refresh" content="0; url=docs.synapse.org/articles/accounts_certified_users_and_profile_validation.html" />
+    <meta http-equiv="refresh" content="0; url={{'articles/accounts_certified_users_and_profile_validation.html' | relative_url}}" />
     <title>redirect</title>
 </head>
 <body>
@@ -12,7 +12,7 @@ layout: default
 <h4 style="text-align: center">
     If the page doesn't automatically redirect,
     <br>
-    click <a href="accounts_certified_users_and_profile_validation.html">here</a>.
+    click <a href="{{'articles/accounts_certified_users_and_profile_validation.html' | relative_url}}">here</a>.
     <br>
     <br>
     <!--<img style="height: 200px;" src="/assets/images/stu-oops-sm.png"-->

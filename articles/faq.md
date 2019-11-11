@@ -53,7 +53,7 @@ Yes, Synapse is released under the [Apache 2.0 License](https://github.com/Sage-
 
 #### I am a developer - is there API documentation?
 
-Yes, Synapse is built on top of a RESTful service that is automatically [documented](http://docs.synapse.org/rest). In addition, we have purpose built APIs for [Python](https://python-docs.synapse.org/), [R](https://r-docs.synapse.org/), Java and a [command line](https://python-docs.synapse.org/build/html/CommandLineClient.html) interface.
+Yes, Synapse is built on top of a RESTful service that is automatically [documented](http://rest-docs.synapse.org/rest). In addition, we have purpose built APIs for [Python](https://python-docs.synapse.org/), [R](https://r-docs.synapse.org/), Java and a [command line](https://python-docs.synapse.org/build/html/CommandLineClient.html) interface.
 
 #### How do I set up my own instance of Synapse?
 

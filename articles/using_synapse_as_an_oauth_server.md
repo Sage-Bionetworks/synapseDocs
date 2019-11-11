@@ -20,7 +20,7 @@ External web applications can now log in to Synapse and access users' identity a
 The details of the Synapse Open ID Connect implementation are published on the web in a standard Open ID Configuration document (aka the "discovery document"): [https://repo-prod.prod.sagebase.org/auth/v1/.well-known/openid-configuration](https://repo-prod.prod.sagebase.org/auth/v1/.well-known/openid-configuration).  The document includes the web endpoints for registration, authorization, and token generation, as well as the scope of resources that can be requested, and the formats in which Synapse will return information.
 
 ## Create an OAuth 2.0 Client
-An external application can be registered with Synapse as a "client" application by following the steps below.   The API reference documents for what follows are [here](https://docs.synapse.org/rest/#org.sagebionetworks.auth.OpenIDConnectController), and the following instructions show how to invoke them from Python:
+An external application can be registered with Synapse as a "client" application by following the steps below.   The API reference documents for what follows are [here](https://rest-docs.synapse.org/rest/#org.sagebionetworks.auth.OpenIDConnectController), and the following instructions show how to invoke them from Python:
 
 
 ##### Python
@@ -87,7 +87,7 @@ To login via Synapse your client application should redirect the browser from yo
 - `nonce`=`<some string to be returned in the ID token>`
 - `claims`=`<a JSON object>`
 
-Synapse supports the `claims` request parameter, a JSON document containing the details of the user identity information you would like returned, as described [here](https://openid.net/specs/openid-connect-core-1_0.html#ClaimsParameter). The list of supported claims is given [here](https://docs.synapse.org/rest/org/sagebionetworks/repo/model/oauth/OIDCClaimName.html). For most claims the value to include in the JSON document is `null`. The exception is the `team` claim, for which you provide the IDs of one or more teams, the membership of which you wish to inquire about. Synapse will return the IDs of the subset of the given list of teams to which the user belongs. Here is an example of a claims parameter JSON object:
+Synapse supports the `claims` request parameter, a JSON document containing the details of the user identity information you would like returned, as described [here](https://openid.net/specs/openid-connect-core-1_0.html#ClaimsParameter). The list of supported claims is given [here](https://rest-docs.synapse.org/rest/org/sagebionetworks/repo/model/oauth/OIDCClaimName.html). For most claims the value to include in the JSON document is `null`. The exception is the `team` claim, for which you provide the IDs of one or more teams, the membership of which you wish to inquire about. Synapse will return the IDs of the subset of the given list of teams to which the user belongs. Here is an example of a claims parameter JSON object:
 
 ```
  {

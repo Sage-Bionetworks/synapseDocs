@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="https://www.synapse.org/favicon.png?v=3">
+</head>
+
+
+<body>        
+    {% include header.html %}
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+    <script>
+        $(function () {
+            $('.subject-card').matchHeight();
+        });
+    </script>
+
+    <div class='container' style='padding:0 0 0 0; width:100%;'>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-6" id="tagline">
+                <h1 id="title">{{ page.title }}</h1>
+                <span>{{ page.description }}</span>
+            </div>
+        </div>
+
+        {{ content }}
+
+    </div>
+    <div id="footer">
+        {% include footer.html %}
+    </div>    
+
+</body>
+
+</html>

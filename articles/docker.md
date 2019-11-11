@@ -7,7 +7,7 @@ category: howto
 
 Docker is a tool for creating, running, and managing lightweight virtual machines. These virtual machines make it possible to distribute executable environments with all of the dependencies that can easily be run by others. These Docker images can then be stored and distributed on a Docker registry, a collection of these images. There are a number of open registries on the web, and Synapse hosts a private registry, freely available to our users, which will allow users to create software on a per project basis which can be easily shared across Synapse. Learn more about [Docker](https://www.docker.com/products/overview) and [Docker registry](https://www.docker.com/products/docker-registry).
 
-Synapse users interact with the Synapse Docker registry using the standard Docker client. In Synapse, Docker containers are represented as versioned 'repositories' under the 'Docker' tab. As with Files and Tables, Repositories are organized by project and inherit the access controls from the project.
+Synapse users interact with the Synapse Docker registry using the standard Docker client. In Synapse, Docker containers are represented as versioned 'repositories' under the 'Docker' tab. As with Files and Tables, repositories are organized by project and inherit the access permissions from the parent project. [Local Sharing Settings](https://docs.synapse.org/articles/sharing_settings.html#sharing-files-folders-and-tables) can be applied directly to the repository if permissions should differ from the project.
 
 ## Creating a new Docker image
 
@@ -51,9 +51,9 @@ docker build -t  docker.synapse.org/syn12345/my-repo path/to/dockerfile
 
 Learn more about building [docker images](https://docs.docker.com/engine/getstarted/step_four/).  
 
-## Storing Docker images in the Synapse Docker Registry
+## Storing Docker images in the Synapse Docker registry
 
-To store Docker images, use the `docker push` command.  To push to the Synapse Docker Registry, users must be logged into the registry:
+To store Docker images, use the `docker push` command.  To push to the Synapse Docker registry, users must be logged into the registry, be a Synapse certified user and have edit permissions:
 
 ``` console
 docker login -u <synapse username> -p <synapse password> docker.synapse.org
@@ -71,7 +71,7 @@ docker push docker.synapse.org/syn12345/mytestrepo:version1
 docker push docker.synapse.org/syn12345/my-repo
 ```
 
-## Using Docker images stored in the Synapse Docker Registry
+## Using Docker images stored in the Synapse Docker registry
 
 To access the Docker images stored in Synapse, use the `docker pull` command.
 
@@ -91,3 +91,17 @@ where the digest for a commit is printed to the command line after a successful 
 
 {% include note.html content="You can add external repositories, i.e. repositories that live in other registries like DockerHub and quay.io. For these repositories there is no tight integration (Synapse doesn't contact these external registries) but it allows you to list Docker repositories that are relevant to the project but are not within Synapse.
 " %}
+
+## Debugging Issues
+
+While using the Docker client with the Synapse Docker registry, you may encounter an `unauthorized: authentication required` error. 
+
+To rule out an erroneous user name or password, try logging in: 
+
+```
+docker login docker.synapse.org
+```
+
+Once login succeeds, the correct credentials will be cached on the machine and any further issues can be attributed to insufficient access permissions or a deleted container. 
+
+To pull a container from a Synapse Docker repository, you must have download permissions in the sharing settings of the Synapse Docker repository. In Synapse, Docker repositories have names of the form: docker.synapse.org/syn123456/repo-name, where syn123456 is the project ID. Navigate to syn123456 to check the project's sharing settings. To push a new container to a Synapse Docker repository, you must be a Synapse certified user and have edit permissions. To push a change to an existing Synapse Docker repository, you must also have edit permissions. If the container is in the trash can, all operations will fail.

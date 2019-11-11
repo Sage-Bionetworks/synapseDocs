@@ -269,7 +269,7 @@ f <- File(dataFileHandleId=fileHandle$id, parentId=projectId)
 
 f <- synStore(f)
 ```
-Please see the [REST docs](http://docs.synapse.org/rest/org/sagebionetworks/repo/model/project/ExternalS3StorageLocationSetting.html) for more information on setting external storage location settings using our REST API.
+Please see the [REST docs](http://rest-docs.synapse.org/rest/org/sagebionetworks/repo/model/project/ExternalS3StorageLocationSetting.html) for more information on setting external storage location settings using our REST API.
 
 ## Setting Up an External Google Cloud Storage Bucket
 
@@ -350,7 +350,7 @@ project_destination = syn.restPOST('/projectSettings', body = json.dumps(project
 
 ##### R
 
-Please see the [REST docs](http://docs.synapse.org/rest/org/sagebionetworks/repo/model/project/ExternalS3StorageLocationSetting.html) for more information on setting external storage location settings using our REST API.
+Please see the [REST docs](http://rest-docs.synapse.org/rest/org/sagebionetworks/repo/model/project/ExternalS3StorageLocationSetting.html) for more information on setting external storage location settings using our REST API.
 
 ## Setting Up an External Google Cloud Storage Bucket
 
@@ -457,7 +457,7 @@ projectDestination <- synRestPOST('/projectSettings', body=toJSON(projectDestina
 
 Navigate to your **Project/Folder -> Tools -> Change Storage Location**. In the resulting pop-up, select the **Google Cloud Storage Bucket** option and fill in the relevant information, where Bucket is the name of your external bucket, Base Key is the name of the folder in your bucket to upload to, and Banner is a short description such as who owns the storage location.
 
-Please see the [REST docs](http://docs.synapse.org/rest/org/sagebionetworks/repo/model/project/ExternalGoogleCloudStorageLocationSetting.html) for more information on setting external storage location settings using our REST API.
+Please see the [REST docs](http://rest-docs.synapse.org/rest/org/sagebionetworks/repo/model/project/ExternalGoogleCloudStorageLocationSetting.html) for more information on setting external storage location settings using our REST API.
 
 ## Using SFTP
 

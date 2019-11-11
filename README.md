@@ -40,8 +40,18 @@ category: intro
 
 ### Style Guide 
 
-- Page header matches the page name as stated in the [index](http://sage-bionetworks.github.io/synapseDocs/articles/) (e.g. not "Overview").
-  - Article content should begin with a short summary describing what the page is about.
+The title in the [YAML front matter block](https://jekyllrb.com/docs/front-matter/) will populate as a level 1 header. Therefore, please do not supply a H1 header in the markdown! 
+```
+---
+title: "Wikis"
+layout: article
+excerpt: Create wikis to provide narrative content for your research.
+category: howto
+---
+
+Start of short summary about wikis.
+```
+- Article content should begin with a short summary describing what the page is about.
 - Synapse entity types or features are only emphasized in the top-most Overview section on each page. e.g. `File` , `Project` 
   - In all subsequent sections, these entity types or features are referred to as proper nouns and capitalized. e.g. File, Project
 

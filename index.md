@@ -1,24 +1,9 @@
 ---
-title: Synapse Documentation, Welcome to Synapse Documentation
-layout: default
+title: Welcome to Synapse Documentation
+description: Synapse is a collaborative, open-source research platform that allows teams to share data, track analyses, and collaborate.
+layout: index
 ---
 
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
-<script>
-    $(function () {
-        $('.subject-card').matchHeight();
-    });
-</script>
-
-<div class="row" id="background">
-<div class="col-xs-12 col-md-6 col-lg-6" id="tagline">
-    <h1 id="title">Synapse Documentation</h1>
-    <span>Synapse is a collaborative, open-source research platform that allows teams to share data, track analyses, and collaborate.</span>
-    <br>
-    <a id="gs-button" href="{{'articles/getting_started.html' | relative_url}}" type="button" class="btn btn-secondary btn-lg">Get Started</a>
-</div>
-</div>
 <div class="col-xs-12 col-md-12 col-lg-12" id="search-bar">
     <h3 class="search-title">Search All Articles</h3>
     <h5 class="search-text">Find articles and examples for using Synapse in your research</h5>
@@ -79,5 +64,4 @@ layout: default
         </a>
     </div>
 
-</div>
 </div>
