@@ -8,7 +8,7 @@ layout: index
 
 <div class="col-xs-12 col-md-12 col-lg-12" id="subjects">
     <ul class="nav nav-tabs" id="myTab" style="margin-top: -70px; border: 2px solid transparent;">
-    <div class="col-xs-12 col-sm-3">
+    <div class="col-xs-12 col-md-6 col-lg-4">
         <a href="#intro">
         <div class="subject-card">
             <i class="fa fa-power-off"></i>
@@ -18,7 +18,7 @@ layout: index
         </div>
         </a>
     </div>
-    <div class="col-xs-12 col-sm-3">
+    <div class="col-xs-12 col-md-6 col-lg-4">
         <a href="#howto">
         <div class="subject-card">
             <i class="fa fa-book"></i>
@@ -38,7 +38,7 @@ layout: index
         </div>
         </a>
     </div> -->
-   <div class="col-xs-12 col-sm-3">
+   <div class="col-xs-12 col-md-6 col-lg-4">
         <a href="#governance">
         <div class="subject-card">
             <i class="fa fa-lock"></i>
@@ -48,7 +48,7 @@ layout: index
         </div>
         </a>
     </div>
-    <div class="col-xs-12 col-sm-3">
+    <div class="col-xs-12 col-md-6 col-lg-4">
         <a href="#admin">
         <div class="subject-card">
             <i class="fa fa-pencil"></i>
