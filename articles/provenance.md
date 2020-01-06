@@ -139,9 +139,7 @@ You must be the person who created the entity to delete provenance.
 
 ##### Web
 
-Navigate to the entity you would like to delete provenance from (e.g. a File or Folder). In this example, we are deleting provenance from a file. Select **Tools->Edit File Provenance**. In the list of **Used** and **Executed**, click the **X** to delete each activity and **Save** your changes.
-
-<img id="webTab" src="../assets/images/delete_provenance.png">
+Navigate to the File or Folder where you would like to delete provenance. Select **Tools** and then **Edit File Provenance**. In the list of **Used** and **Executed**, click the **X** to delete each activity and **Save** your changes.
 
 ##### Command Line
 
