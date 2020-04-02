@@ -59,7 +59,7 @@ Files can be downloaded in bulk using the `syncFromSynapse` function. This funct
 
 ## Editing in Bulk
 
-You can edit files in bulk by changing the values in the manifest and pushing it up to Synapse using the `syncToSynapse` function. The manifest allows you to modify everything: file path, provenance, annotations, and versions. However, if only annotations are being updated, we recommend using our [File Views]({{ site.baseurl }}{% link _articles/views.md %}) feature.
+You can edit files in bulk by changing the values in the manifest and pushing it up to Synapse using the `syncToSynapse` function. The manifest allows you to modify everything: file path, provenance, annotations, and versions. If you only want to update the file annotations, we recommend using our [File Views]({{ site.baseurl }}{% link _articles/views.md %}) feature. However, updating annotations is still possible using the manifest. If the files have not changed, adding the manifest column `forceVersion` with the value of `False` for each row will stop `syncToSynapse` from uploading new versions of the files.
 
 Please note that you cannot move things with a manifest. If the parentId is changed, it will create a copy and the file will exist in two different locations.
 
