@@ -18,7 +18,7 @@ Some data requires data governance to appropriately manage its use. In Synapse t
 
 ## Examples of Conditions for Use
 
-Conditions for Use vary broadly. Some examples include:
+Conditions for Use vary broadly. Some examples can include:
 
 * Specification of what type of research or analysis can be conducted on the data, for example, a data set may only be able to be used for breast cancer research
 * Specification of who can conduct research with the data set, for example, only researchers at non-profit institutions can use the data for research
