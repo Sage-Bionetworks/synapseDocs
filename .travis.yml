@@ -11,4 +11,4 @@ script:
 #whitelist
 branches:
   only:
-    - master
+    - gh-pages
