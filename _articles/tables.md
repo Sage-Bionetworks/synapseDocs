@@ -166,7 +166,7 @@ SELECT GROUP_CONCAT(distinct(treatmentArm) SEPARATOR ', ') AS "Available Treatme
 
 ## Querying Versioned Tables
 
-To query a particular table version, append the version number after the table id. For example, to query the first version of `syn3079449`:
+To query a particular table version, append the version number after the `Table` ID. For example, to query the first version of `syn3079449`:
 
 ```sql
 SELECT * FROM syn3079449.1
