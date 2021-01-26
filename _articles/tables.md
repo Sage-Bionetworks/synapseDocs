@@ -164,6 +164,14 @@ To list out the distinct treatent arms that were studied, by gender:
 SELECT GROUP_CONCAT(distinct(treatmentArm) SEPARATOR ', ') AS "Available Treatments", gender as "By Gender" FROM syn3079449 group by gender
 ```
 
+## Querying Versioned Tables
+
+To query a particular table version, append the version number after the table id. For example, to query the first version of `syn3079449`:
+
+```sql
+SELECT * FROM syn3079449.1
+```
+
 # Using Table Facets
 
 The faceted navigation on `Tables` (also known as **simple search**) can be used to simplify your search without having to use SQL-like queries. Simple search uses radio buttons and sliders to show all available facets in a menu to the left of the `Table` whereas advanced search employs a SQL-like query to filter the `Table`. To use table facets, navigate to a `Table` or a `File View`. Simple and advanced search both allow you to query for features of interest in a`Table` using different methods.
