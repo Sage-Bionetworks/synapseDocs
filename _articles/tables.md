@@ -164,6 +164,11 @@ To list out the distinct treatent arms that were studied, by gender:
 SELECT GROUP_CONCAT(distinct(treatmentArm) SEPARATOR ', ') AS "Available Treatments", gender as "By Gender" FROM syn3079449 group by gender
 ```
 
+## Version a Table
+Versioning is an essential component of conducting reproducible research. Tables can be versioned to create a snapshot of your data at a specific point in time. This snapshot can then be referenced and shared.  For example, if you are collecting data in a Table, you may want to share your work with others for analysis. You can create a version to ensure that each collaborator sees the same data in the Table, even after adding data or changing data in the Table. Later, when you're ready for another data release, you can create a second version to share for additional analysis. At any time, you can refer back to previous versions to verify and reproduce your research.
+
+As you refine a Table, changes are saved to the synID (e.g. syn456). Unlike Files, which are automatically versioned anytime the file is changed, you decide when to manually create a Table version. Creating a new version adds a number to the parent synID (e.g. syn456.2), which can be used to reference or query that version within Synapse. Navigating to the parent synID (syn456) will always display the most recent changes to the Table, regardless of whether you have included them in a version. 
+
 # Using Table Facets
 
 The faceted navigation on `Tables` (also known as **simple search**) can be used to simplify your search without having to use SQL-like queries. Simple search uses radio buttons and sliders to show all available facets in a menu to the left of the `Table` whereas advanced search employs a SQL-like query to filter the `Table`. To use table facets, navigate to a `Table` or a `File View`. Simple and advanced search both allow you to query for features of interest in a`Table` using different methods.

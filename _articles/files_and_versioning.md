@@ -130,15 +130,15 @@ entity <- synDelete("syn56789")
 
 Versioning is an important component to reusable, reproducible research. When a Synapse `File` is initially uploaded, it automatically gets a version of `1`. It can be referred to explicitly by its Synapse ID: `syn12345678.1`. Uploading a new version of a file replaces the existing file in Synapse while preserving the previous version. The Synapse ID will remain but the version will increase, e.g., `syn12345678.2`. All versions are accessible through a single entry point (the Synapse ID, `syn12345678`). It is important to note that, by default, any previous versions of the file should still be available - they may be used in provenance relationships or as part of a data release. 
 
-Providing the Synapse ID without any versioning information to any of the clients (e.g., `syn12345678`) will always point to the most recent version of the file. In this way, updates to files can be automatically fetched by users by omitting the version.
+Providing the Synapse ID without any versioning information to any of the clients (e.g., `syn12345678`) will always point to the most recent version of the file. In this way, updates to files can be automatically fetched by users by omitting the version number.
 
-If a DOI has been created for a Synapse file, it is automatically versioned as well, so specific versions can be cited in other places.
+A DOI can be minted for an individual version of a `File`, so other researchers can easily access the same data that you published. For more information, see [DOIs](doi.md).
 
 The easiest way to create a new version of an existing Synapse `File` is to use the same file name and store it in the same location (e.g., the same `parentId`). Synapse will automatically determine that a new version of a file is being stored, only if the contents of the file have changed. If the contents have not changed (e.g., the `md5sum` of the file is identical to the most recent version), a new file will not be uploaded and the version will not increase.
 
 Only the file and annotations information are included in the version. Other metadata about a Synapse `File` (such as the description, name, parent, ACL, *and its associated Wiki*) are not part of the version, and will not change between versions.
 
-## Uploading a New Version
+### Uploading a New Version
 
 Uploading a new version follows the same steps as uploading a file for the first time - use the same file name and store it in the same location (e.g., the same `parentId`). **It is recommended to add a comment to the new version in order to easily track differences at a glance**. The example file `raw_data.txt` will now have a version of `2` and a comment describing the change.
 
@@ -208,7 +208,7 @@ synStore(File('path/to/old/raw_data.txt', parentId='syn123456'))
 new_file <- synStore(File('path/to/new_version/raw_data.txt',  parentId='syn123456'))
 ```
 
-## Updating Annotations or Provenance Without Changing Versions
+### Updating Annotations or Provenance Without Changing Versions
 
 Any change to a `File` will automatically update its version. If this isn't the desired behavior, such as minor cahnges to the metadata, you can set `forceVersion=False` with the Python or R clients. For command line, the commands `set-annotations` and `set-provenance` will update the metadata without creating a new version. Adding/updating annotations and provenance in the web client will also not cause a version change.
 
@@ -279,7 +279,7 @@ act <- Activity(name = 'Example Code', used = '/path/to/example_code')
 file <- synStore(file, activity=act, forceVersion=FALSE)
 ```
 
-## Downloading a Specific Version
+### Downloading a Specific Version
 
 By default, the `File` downloaded will always be the most recent version. However, a specific version can be downloaded by passing the `version` parameter.
 
@@ -306,7 +306,7 @@ entity = syn.get("syn56789", version=1)
 entity <- synGet("syn56789", version=1)
 ```
 
-## Deleting a Specific File Version
+### Deleting a Specific File Version
 
 A specific file version can be deleted by passing the `version` parameter.
 
