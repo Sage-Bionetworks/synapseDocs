@@ -49,6 +49,17 @@ To allow authorized Synapse users to upload data to your bucket set read-write p
             "Effect": "Allow",
             "Resource": "arn:aws:s3:::thisisthenameofmybucket/*",
             "Principal": { "AWS": "325565585839" }
+        },
+        {
+            "Action": [ "s3:PutObject" ],
+            "Effect": "Deny",
+            "Resource": "arn:aws:s3:::thisisthenameofmybucket/*",
+            "Principal": { "AWS": "325565585839" },
+            "Condition": {
+                "StringNotEquals": {
+                    "s3:x-amz-acl": "bucket-owner-full-control"
+                }
+            }
         }
     ]
 }
@@ -115,8 +126,26 @@ In **Permissions**, click **CORS configuration**. In the CORS configuration edit
 ```
 
 <br/>
+
 <br/>
 For more information, please read: [How Do I Configure CORS on My Bucket?](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html#how-do-i-enable-cors){:target="_blank"}
+
+<br/>
+
+### Make sure to enable bucket owner full control
+In **Permissions**, click **Object ownership**, click **edit**, select **Bucket owner preferred** and save changes or set this yaml in cloudformation:
+{% highlight yaml %}
+    Properties:
+      OwnershipControls:
+        Rules:
+          - ObjectOwnership: BucketOwnerPreferred
+{% endhighlight %}
+
+<br/>
+<br/>
+For more information, please read: [Controlling ownership of uploaded objects using S3 Object Ownership](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html){:target="_blank"}
+
+<br/>
 
 ### Set S3 Bucket as Upload Location
 
