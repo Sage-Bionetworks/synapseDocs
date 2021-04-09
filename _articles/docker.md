@@ -7,7 +7,9 @@ category: reproducible-research
 
 Docker is a tool for creating, running, and managing lightweight virtual machines. These virtual machines make it possible to distribute executable environments with all of the dependencies that can easily be run by others. These Docker images can then be stored and distributed on a Docker registry, a collection of these images. There are a number of open registries on the web, and Synapse hosts a private registry, freely available to our users, which will allow users to create software on a per project basis which can be easily shared across Synapse. Learn more about [Docker](https://www.docker.com/products/overview) and [Docker registry](https://www.docker.com/products/docker-registry).
 
-Synapse users interact with the Synapse Docker registry using the standard Docker client. In Synapse, Docker containers are represented as versioned 'repositories' under the 'Docker' tab. As with Files and Tables, repositories are organized by project and inherit the access permissions from the parent project. [Local Sharing Settings](https://docs.synapse.org/articles/sharing_settings.html#sharing-files-folders-and-tables) can be applied directly to the repository if permissions should differ from the project.
+Registered Synapse users interact with the Synapse Docker registry using the standard Docker client. If you have not yet created a Synapse account, please first [register](https://docs.synapse.org/articles/getting_started.html#create-your-account). 
+
+In Synapse, Docker containers are represented as versioned 'repositories' under the 'Docker' tab. As with Files and Tables, repositories are organized by project and inherit the access permissions from the parent project. [Local Sharing Settings](https://docs.synapse.org/articles/sharing_settings.html#sharing-files-folders-and-tables) can be applied directly to the repository if permissions should differ from the project.
 
 To learn more about working with Docker using one of our programmatic clients, including code examples for the below tasks, see:
 
@@ -55,7 +57,7 @@ When building a Docker image from a Dockerfile, add a `-t` to the docker build c
 docker build -t  docker.synapse.org/syn12345/my-repo path/to/dockerfile
 ```
 
-Learn more about building [docker images](https://docs.docker.com/engine/getstarted/step_four/).  
+Learn more about building [Docker images](https://docs.docker.com/engine/getstarted/step_four/).  
 
 ## Storing Docker images in the Synapse Docker registry
 
@@ -90,11 +92,12 @@ docker login -u <anything> -p <access token> docker.synapse.org
 
 ## Using Docker images stored in the Synapse Docker registry
 
-To access the Docker images stored in Synapse, use the `docker pull` command.
+To access the Docker images stored in Synapse, use the `docker pull` command. To pull from the Synapse Docker registry, users must be logged into the registry and have download permissions:
 
 {% include tip.html content="By default, if you do not specify a tag, it will attach latest as the tag.  If you specified a tag on your repository, be sure to pull the repository with the tag." %}
 
 ``` console
+docker login -u <synapse username> -p <synapse password> docker.synapse.org
 docker pull docker.synapse.org/syn12345/my-repo
 ```
 
