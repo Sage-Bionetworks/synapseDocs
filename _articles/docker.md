@@ -7,7 +7,7 @@ category: reproducible-research
 
 Docker is a tool for creating, running, and managing lightweight virtual machines. These virtual machines make it possible to distribute executable environments with all of the dependencies that can easily be run by others. These Docker images can then be stored and distributed on a Docker registry, a collection of these images. There are a number of open registries on the web, and Synapse hosts a private registry, freely available to our users, which will allow users to create software on a per project basis which can be easily shared across Synapse. Learn more about [Docker](https://www.docker.com/products/overview) and [Docker registry](https://www.docker.com/products/docker-registry).
 
-Registered Synapse users interact with the Synapse Docker registry using the standard Docker client. If you have not yet created a Synapse account, please first [register](https://docs.synapse.org/articles/getting_started.html#create-your-account). 
+Registered Synapse users interact with the Synapse Docker registry using the standard Docker client. If you have not yet created an account, please first [register for Synapse](https://docs.synapse.org/articles/getting_started.html#create-your-account). 
 
 In Synapse, Docker containers are represented as versioned 'repositories' under the 'Docker' tab. As with Files and Tables, repositories are organized by project and inherit the access permissions from the parent project. [Local Sharing Settings](https://docs.synapse.org/articles/sharing_settings.html#sharing-files-folders-and-tables) can be applied directly to the repository if permissions should differ from the project.
 
