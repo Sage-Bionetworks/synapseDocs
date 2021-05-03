@@ -30,9 +30,9 @@ This opens a **New Thread** dialog box in which you can edit text, insert pictur
 <br>
 ### Managing Notifications
 
-You may subscribe to a Discussion forum for a particular Project by clicking the **Follow** button on the main discussion page. Once you've subscribed to a forum, you will receive an email to your Synapse-registered email address whenever a new thread is created or a reply to an existing thread is posted. You can use the **Unfollow** button at any time to discontinue this subscription.
+You may subscribe to a Discussion forum for a particular Project by clicking the **Follow** button on the main discussion page. Once you've subscribed to a forum, you will receive an email to your Synapse-registered email address whenever a new thread is created. You can use the **Unfollow** button at any time to discontinue this subscription.
 
-Additionally, you may change notification settings on an individual thread by using the **eye** icon which is visible from within the thread, or by selecting **Follow Thread** or **Unfollow Thread** from the Tools menu. This can be used to stop receiving reply notifications for that individual thread when you've followed all activity in a discussion forum, or to follow activity in only a select thread.
+To receive email notifications for replies to individual threads, click the **eye** icon that is visible from within the thread of interest. If you reply to a thread, you begin following the thread automatically.
 
 <img style="width: 40%;" src="../assets/images/UnfollowThread.png">
 <br>
