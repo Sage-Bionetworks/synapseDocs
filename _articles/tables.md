@@ -96,7 +96,9 @@ To delete columns, click on the **Schema** button. From there, click the **Edit 
 <img id="image" src="../assets/images/table_deleting_columns.png">
 
 To modify information in a column, first begin by **adding** a new column, then **copy** the data from the column you would like to change into the newly created column, make the changes in the new column, and **delete** the old one.
- In this example, we are chaning the **Column Type** of **Header_1** into **Boolean** and setting the **Default Value** to **true**.
+ In this example, we are chaning the **Column Type** of **Header_1** into **Boolean** and setting the **Default Value** to **true**. This is also true if you are changing a **Table Column Type** from representing a single value to multiple values, such as needing to change a **Column Type** from **String** to **StringList** or similar. 
+
+
 
  <img id="image" src="../assets/images/table_modifying_columns.png">
 
