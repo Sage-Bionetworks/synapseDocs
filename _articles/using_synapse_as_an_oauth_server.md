@@ -212,6 +212,23 @@ curl -H "Authorization:Bearer <access token>" https://repo-prod.prod.sagebase.or
 
 If the `'userinfo_signed_response_alg': 'RS256'` option was included in the client registration then the result will be returned as a signed JSON Web Token, otherwise a simple JSON object will be returned.
 
+To make authenticated requests with the Synapse client:
+
+In Python:
+
+```python
+import synapseclient
+syn = synapseclient.Synapse()
+syn.login(authToken=<access token>)
+```
+
+In R:
+
+```python
+library(synapser)
+synLogin(authToken=<access token>)
+```
+
 ## Refresh Tokens
 
 Access tokens last for 24 hours, after which the client must either repeat the authorization process or use the refresh token to get a new access token.  To do the latter, send a request to the refresh token endpoint: 
