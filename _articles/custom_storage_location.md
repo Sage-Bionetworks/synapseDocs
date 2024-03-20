@@ -257,7 +257,7 @@ fileHandle = {'concreteType': 'org.sagebionetworks.repo.model.file.S3FileHandle'
               'storageLocationId': destination['storageLocationId']}
 fileHandle = syn.restPOST('/externalFileHandle/s3', json.dumps(fileHandle), endpoint=syn.fileHandleEndpoint)
 
-f = synapseclient.File(parentId=PROJECT, dataFileHandleId = fileHandle['id'])
+f = synapseclient.File(parentId=PROJECT, dataFileHandleId = fileHandle['id'], name=fileHandle['fileName'])
 
 f = syn.store(f)
 ```
@@ -276,7 +276,7 @@ fileHandle <- list(concreteType='org.sagebionetworks.repo.model.file.S3FileHandl
                    key ='s3ObjectKey')
 fileHandle <- synRestPOST('/externalFileHandle/s3', body=toJSON(fileHandle), endpoint = 'https://file-prod.prod.sagebase.org/file/v1')
 
-f <- File(dataFileHandleId=fileHandle$id, parentId=projectId)
+f <- File(dataFileHandleId=fileHandle$id, name=fileHandle$fileName, parentId=projectId)
 
 f <- synStore(f)
 ```
